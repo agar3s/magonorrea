@@ -17,3 +17,4 @@ editor/display_folded = true
 [node name="Flappy" parent="CurrentMicroGame" instance=ExtResource( 2 )]
 
 [node name="HUD" parent="." instance=ExtResource( 3 )]
+
