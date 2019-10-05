@@ -12,9 +12,10 @@ __meta__ = {
 }
 
 [node name="CurrentMicroGame" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Flappy" parent="CurrentMicroGame" instance=ExtResource( 2 )]
 
 [node name="HUD" parent="." instance=ExtResource( 3 )]
+
+[node name="Node2D" type="Node" parent="."]
 

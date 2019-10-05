@@ -4,10 +4,13 @@ var velocity_y = 20
 var movement_threshold = 80
 var down = true
 
+export (bool) var debug_movable = true
+
 func _ready():
 	self.type = 'talisman'
-	move()
-	$Tween.connect("tween_completed", self, "move")
+	if debug_movable:
+		move()
+		$Tween.connect("tween_completed", self, "move")
 
 func move(a=0, b=0):
 	print(position.y)

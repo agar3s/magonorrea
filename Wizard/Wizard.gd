@@ -6,6 +6,9 @@ signal action_done
 # estos valores cambiarán dependiendo de la cosa en la que se haya
 # transformado el mago --------------------------------------------------------┐
 # warning-ignore:unused_class_variable
+# tamanio de colision para el mago
+var collision_width = 32
+# velocidad en X, que tan rápido se mueve.
 var fly_x = 450
 # entre más pequeño es más jodido hacerlo subir
 var fly_y = 550
@@ -43,4 +46,4 @@ func fall(gravity):
 
 func die():
 	dead = true
-	$Sprite.rotation_degrees = 0
+	$Sprite.rotation_degrees = -180

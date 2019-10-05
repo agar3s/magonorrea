@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://micro-games/flappy/Flappy.gd" type="Script" id=1]
-[ext_resource path="res://Wizard/Wizard.tscn" type="PackedScene" id=2]
-[ext_resource path="res://micro-games/flappy/Fork.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=4]
-
+[ext_resource path="res://Common/Collider.gd" type="Script" id=2]
+[ext_resource path="res://Wizard/Wizard.tscn" type="PackedScene" id=3]
+[ext_resource path="res://micro-games/flappy/Fork.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 512, 10 )
@@ -16,80 +16,86 @@ __meta__ = {
 "_edit_vertical_guides_": [ 512.0 ]
 }
 
-[node name="Ceil" type="KinematicBody2D" parent="."]
-editor/display_folded = true
+[node name="Ceil" type="Node2D" parent="."]
+script = ExtResource( 2 )
+type = "ceil"
+
+[node name="Area2D" type="Area2D" parent="Ceil"]
 position = Vector2( 512, 0 )
 collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ceil"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ceil/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Floor" type="KinematicBody2D" parent="."]
-editor/display_folded = true
+[node name="Floor" type="Node2D" parent="."]
+script = ExtResource( 2 )
+type = "floor"
+
+[node name="Area2D" type="Area2D" parent="Floor"]
 position = Vector2( 512, 600 )
 collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Area2D"]
 shape = SubResource( 1 )
 
-[node name="Wizard" parent="." instance=ExtResource( 2 )]
+[node name="Wizard" parent="." instance=ExtResource( 3 )]
 position = Vector2( 260, 90 )
 
 [node name="Forks" type="Node2D" parent="."]
-editor/display_folded = true
 
-[node name="Fork" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 1000, 540 )
 
-[node name="Fork2" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork2" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 1350, 0 )
 
-[node name="Fork3" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork3" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 1350, 600 )
 
-[node name="Fork4" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork4" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 1680, 180 )
 
-[node name="Fork5" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork5" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 1900, 670 )
 
-[node name="Fork6" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork6" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 2310, 140 )
 
-[node name="Fork7" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork7" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 2310, 690 )
 
-[node name="Fork8" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork8" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 3990, 40 )
 rotation = 1.5708
 
-[node name="Fork9" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork9" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 3990, 110 )
 rotation = 1.5708
 
-[node name="Fork10" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork10" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 3990, 190 )
 rotation = 1.5708
 
-[node name="Fork11" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork11" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 3990, 260 )
 rotation = 1.5708
 
-[node name="Fork12" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork12" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 3990, 320 )
 rotation = 1.5708
 
-[node name="Fork13" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork13" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 3990, 390 )
 rotation = 1.5708
 
-[node name="Fork14" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork14" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 3990, 460 )
 rotation = 1.5708
 
-[node name="Fork15" parent="Forks" instance=ExtResource( 3 )]
+[node name="Fork15" parent="Forks" instance=ExtResource( 4 )]
 position = Vector2( 3990, 530 )
 rotation = 1.5708
 
-[node name="Talisman" parent="Forks" instance=ExtResource( 4 )]
-position = Vector2( 3500, 300 )
+[node name="Talisman" parent="Forks" instance=ExtResource( 5 )]
+position = Vector2( 3501, 300 )
+
