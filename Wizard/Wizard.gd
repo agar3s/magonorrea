@@ -3,25 +3,29 @@ extends KinematicBody2D
 # definir las señasles
 signal action_done
 
-# este valor dependerá de la cosa en la que se haya transformado el mago
-export(int) var fly_x = 125
-export(int) var fly_y = 720
+# estos valores cambiarán dependiendo de la cosa en la que se haya
+# transformado el mago --------------------------------------------------------┐
+var fly_x = 600
+# entre más pequeño es más jodido hacerlo subir
+var fly_y = 550
+# entre más alto planea más (si es negativo no planea y hace que sea más difícil volar)
+var wind_resistance = 200
+# entre más grande es más difícil hacerla subir
+var max_vel_y = 400
+# └----------------------------------------------------------------------------┘
+
 var mov = Vector2()
 
 const FALL_X = 35
-const GRAVITY = 980
 
 func _physics_process(delta):
-	mov.y += GRAVITY * delta
-	# mov.x += FALL_X * delta
 	mov = move_and_slide(mov)
-	
-	if is_on_wall() or is_on_floor() or is_on_ceiling():
-		get_tree().paused = true
-	
-	if Input.is_action_just_pressed("ui_action"):
+
+	if Input.is_action_just_released("ui_action"):
 		emit_signal("action_done")
 
 func fly():
-	mov.y = -fly_y
-	# mov.x = fly_x
+	mov.y = max(mov.y - fly_y, -max_vel_y)
+
+func fall(gravity):
+	mov.y = min((gravity - wind_resistance) * get_physics_process_delta_time() + mov.y, max_vel_y)

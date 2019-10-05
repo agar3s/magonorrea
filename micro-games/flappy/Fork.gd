@@ -1,15 +1,8 @@
-extends KinematicBody2D
-
-signal died
-
-export(int) var x_speed = 65
+extends StaticBody2D
 
 func _ready():
-	randomize()
-	global_position.y += randi() % 220 - 200
+	$Area2D.connect("body_entered", self, "_on_collision_detected")
 
-func _physics_process(delta):
-	move_and_slide(Vector2(-x_speed, 0))
-	if global_position.x < 0:
-		emit_signal("died")
-		queue_free()
+func _on_collision_detected(body):
+    if body.get_name() == "Wizard":
+        get_tree().paused = true
