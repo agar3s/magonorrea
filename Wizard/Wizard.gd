@@ -7,7 +7,7 @@ signal action_done
 # transformado el mago --------------------------------------------------------┐
 # warning-ignore:unused_class_variable
 # tamanio de colision para el mago
-var collision_width = 32
+export (int) var collision_width = 32
 # velocidad en X, que tan rápido se mueve.
 export (int) var fly_x = 450
 # entre más pequeño es más jodido hacerlo subir
@@ -27,15 +27,29 @@ var dead = false
 
 const FALL_X = 35
 
+func _ready():
+	$CollisionShape2D.shape.radius = collision_width
+	pass
+
 # warning-ignore:unused_argument
 func _physics_process(delta):
 	if dead: return
-	self.mov.x = 0
 	self.mov = move_and_slide(self.mov)
 
 	if Input.is_action_just_released("ui_action"):
-		emit_signal("action_done")
-
+		emit_signal("action_done", "action")
+	
+	if Input.is_action_just_released("ui_left"):
+		emit_signal("action_done", "left")
+	
+	if Input.is_action_just_released("ui_right"):
+		emit_signal("action_done", "right")
+		
+	if Input.is_action_just_released("ui_up"):
+		emit_signal("action_done", "up")
+	
+	if Input.is_action_just_released("ui_down"):
+		emit_signal("action_done", "down")
 
 func fly():
 	self.mov.y = max(self.mov.y - self.fly_y, -self.max_vel_y)

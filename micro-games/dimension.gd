@@ -18,6 +18,10 @@ func make_fly():
 	if paused: return
 	wizard.fly()
 
+func wizard_action(action):
+	if action == 'action':
+		self.make_fly()
+
 func _on_wizard_collide(element_type):
 	if element_type=='talisman':
 		self.win()
@@ -41,4 +45,4 @@ func set_wizard_form(form):
 	wizard.set_name("Wizard")
 	wizard.set_position(wizard_starting_pos)
 	add_child(wizard)
-	wizard.connect("action_done", self, "make_fly")
+	wizard.connect("action_done", self, "wizard_action")
