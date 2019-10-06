@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
-[ext_resource path="res://micro-games/flappy/Flappy.tscn" type="PackedScene" id=2]
-[ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=2]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -12,11 +11,8 @@ __meta__ = {
 }
 
 [node name="CurrentMicroGame" type="Node2D" parent="."]
-editor/display_folded = true
 
-[node name="Flappy" parent="CurrentMicroGame" instance=ExtResource( 2 )]
-
-[node name="HUD" parent="." instance=ExtResource( 3 )]
+[node name="HUD" parent="." instance=ExtResource( 2 )]
 
 [node name="Node2D" type="Node" parent="."]
 

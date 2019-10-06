@@ -1,17 +1,5 @@
-extends Node2D
+extends "res://micro-games/dimension.gd"
 
-signal DIE
-signal WIN
-signal PROGRESS
-
-const GRAVITY = 980
-var level_velocity_x = 0
-
-export (bool) var debug_can_die = true
-
-var paused = true
-var total_distance = 0
-var wizard
 var chickens_threshold = -210
 
 func _ready():
@@ -35,35 +23,15 @@ func _process(delta):
 	if int($Forks.global_position.x) % 10 == 0:
 		emit_signal('PROGRESS', int(-100*($Forks.global_position.x)/total_distance))
 
-func make_fly():
-	if paused: return
-	wizard.fly()
 
 func _on_wizard_collide(element_type):
+	._on_wizard_collide(element_type)
 	if element_type=='fork' || element_type=='ceil' || element_type=='floor':
 		self.die()
-	elif element_type=='talisman':
-		self.win()
 
-func start():
-	pass
-
-func die():
-	if !debug_can_die: return
-	get_tree().paused = true
-	wizard.die()
-	emit_signal("DIE")
-
-func win():
-	get_tree().paused = true
-	emit_signal("WIN")
 
 func set_wizard_form(form):
-	wizard = form.instance()
-	wizard.set_name("Wizard")
-	wizard.set_position(Vector2(260, 90))
-	add_child(wizard)
-	wizard.connect("action_done", self, "make_fly")
+	.set_wizard_form(form)
 	level_velocity_x = wizard.fly_x
 	total_distance = $Forks/Talisman.position.x - wizard.position.x - wizard.collision_width
 
