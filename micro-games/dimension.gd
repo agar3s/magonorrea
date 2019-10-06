@@ -27,7 +27,7 @@ func start():
 
 func die():
 	if !debug_can_die: return
-	get_tree().paused = true
+#	get_tree().paused = true
 	wizard.die()
 	emit_signal("DIE")
 

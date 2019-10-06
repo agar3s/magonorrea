@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/Pollo_Explode.tpsheet-892d1d7aa644bf3d1f2fa0a727ef1cdf.res"
+
+[deps]
+
+files=[ "res://Wizard/Sprites/Pollo_Explode.sprites/final-030.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-031.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-032.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-033.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-034.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-035.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-036.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-037.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-038.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-039.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-040.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-041.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-042.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-043.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-044.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-045.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-046.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-047.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-048.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-049.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-050.tres" ]
+
+source_file="res://Wizard/Sprites/Pollo_Explode.tpsheet"
+dest_files=[ "res://.import/Pollo_Explode.tpsheet-892d1d7aa644bf3d1f2fa0a727ef1cdf.res", "res://Wizard/Sprites/Pollo_Explode.sprites/final-030.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-031.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-032.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-033.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-034.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-035.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-036.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-037.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-038.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-039.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-040.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-041.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-042.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-043.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-044.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-045.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-046.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-047.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-048.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-049.tres", "res://Wizard/Sprites/Pollo_Explode.sprites/final-050.tres" ]
+
+[params]
+

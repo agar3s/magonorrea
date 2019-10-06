@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/Pollo_Fly.tpsheet-6d0db2ad277c10bcd37c5d1c01e32adb.res"
+
+[deps]
+
+files=[ "res://Wizard/Sprites/Pollo_Fly.sprites/final-020.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-021.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-022.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-023.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-024.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-025.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-026.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-027.tres" ]
+
+source_file="res://Wizard/Sprites/Pollo_Fly.tpsheet"
+dest_files=[ "res://.import/Pollo_Fly.tpsheet-6d0db2ad277c10bcd37c5d1c01e32adb.res", "res://Wizard/Sprites/Pollo_Fly.sprites/final-020.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-021.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-022.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-023.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-024.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-025.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-026.tres", "res://Wizard/Sprites/Pollo_Fly.sprites/final-027.tres" ]
+
+[params]
+
