@@ -12,7 +12,6 @@ func _ready():
 		$Tween.connect("tween_completed", self, "move")
 
 func move(a=0, b=0):
-	print(position.y)
 	$Tween.interpolate_property(
 		self,
 		"position:y",

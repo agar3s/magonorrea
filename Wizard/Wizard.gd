@@ -9,17 +9,17 @@ signal action_done
 # tamanio de colision para el mago
 var collision_width = 32
 # velocidad en X, que tan rápido se mueve.
-var fly_x = 450
+export (int) var fly_x = 450
 # entre más pequeño es más jodido hacerlo subir
-var fly_y = 550
+export (int) var fly_y = 550
 # entre más alto planea más (si es negativo no planea y hace que sea más difícil volar)
-var wind_resistance = 200
+export (int) var wind_resistance = 200
 # entre más grande es más difícil hacerla subir
-var max_vel_y = 400
+export (int) var max_vel_y = 400
 # velocidad de salto
-var jump_speed_y = -300
+export (int) var jump_speed_y = -300
 # que tan rapido corre
-var ground_speed_x = 350
+export (int) var ground_speed_x = 350
 # └----------------------------------------------------------------------------┘
 
 var mov = Vector2()
@@ -55,7 +55,9 @@ func die():
 	self.dead = true
 	$Sprite.rotation_degrees = -180
 
+func win():
+	self.dead = true
+
 
 func jump():
-	print("jump!!!!")
 	mov.y = jump_speed_y

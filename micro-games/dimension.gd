@@ -33,6 +33,7 @@ func die():
 
 func win():
 	paused = true
+	wizard.win()
 	emit_signal("WIN")
 
 func set_wizard_form(form):
