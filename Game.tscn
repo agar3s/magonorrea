@@ -19,3 +19,4 @@ editor/display_folded = true
 [node name="HUD" parent="." instance=ExtResource( 3 )]
 
 [node name="Node2D" type="Node" parent="."]
+
