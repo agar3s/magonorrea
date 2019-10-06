@@ -27,12 +27,12 @@ func start():
 
 func die():
 	if !debug_can_die: return
-#	get_tree().paused = true
+	paused = true
 	wizard.die()
 	emit_signal("DIE")
 
 func win():
-	get_tree().paused = true
+	paused = true
 	emit_signal("WIN")
 
 func set_wizard_form(form):

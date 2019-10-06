@@ -12,9 +12,17 @@ func _ready():
 	$Tween.connect("tween_completed", self, "roast")
 
 	# poner los pollos a asar
+	for f in $FireContainer.get_children():
+		f.play("Burn")
 	for c in $ChickensContainer.get_children():
 		c.play("Spin")
 	roast()
+	
+	# poner los bordes a arder
+	for fb in $Floor/FireContainer.get_children():
+		fb.play("Burn")
+	for fb in $Ceil/FireContainer.get_children():
+		fb.play("Burn")
 	
 	# play musica
 	$MX_Kitchen.play()
@@ -42,7 +50,7 @@ func roast(a = 0, b = 0):
 	for c in $ChickensContainer.get_children():
 		if c.position.y == chickens_threshold:
 			c.z_index = -1
-			c.self_modulate = Color(1.0, 1.0, 1.0, 0.5)
+			c.self_modulate = Color(0.5, 0.5, 0.5, 1.5)
 		else:
 			c.z_index = 0
 			c.self_modulate = Color(1.0, 1.0, 1.0, 1.0)

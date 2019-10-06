@@ -1,0 +1,108 @@
+{
+	"textures": [
+		{
+			"image": "borders_fire.png",
+			"size": {
+				"w": 1200,
+				"h": 410
+			},
+			"sprites": [
+				{
+					"filename": "ll1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 410
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ll2.png",
+					"region": {
+						"x": 200,
+						"y": 0,
+						"w": 200,
+						"h": 410
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ll3.png",
+					"region": {
+						"x": 400,
+						"y": 0,
+						"w": 200,
+						"h": 410
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ll4.png",
+					"region": {
+						"x": 600,
+						"y": 0,
+						"w": 200,
+						"h": 410
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ll5.png",
+					"region": {
+						"x": 800,
+						"y": 0,
+						"w": 200,
+						"h": 410
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ll6.png",
+					"region": {
+						"x": 1000,
+						"y": 0,
+						"w": 200,
+						"h": 410
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:454439d9ff1e4030e56b771dc606d63c:7a376f5c362e84c5312bfab444bcb169:ed4d3a967e175a5996a3917ef0826ed3$"
+	}
+}

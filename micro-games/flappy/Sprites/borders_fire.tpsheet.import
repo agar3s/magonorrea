@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/borders_fire.tpsheet-2b03169a7e4de2455e45e868b7e815fc.res"
+
+[deps]
+
+files=[ "res://micro-games/flappy/Sprites/borders_fire.sprites/ll1.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll2.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll3.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll4.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll5.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll6.tres" ]
+
+source_file="res://micro-games/flappy/Sprites/borders_fire.tpsheet"
+dest_files=[ "res://.import/borders_fire.tpsheet-2b03169a7e4de2455e45e868b7e815fc.res", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll1.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll2.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll3.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll4.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll5.tres", "res://micro-games/flappy/Sprites/borders_fire.sprites/ll6.tres" ]
+
+[params]
+

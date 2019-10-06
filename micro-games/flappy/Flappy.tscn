@@ -1,45 +1,99 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=72 format=2]
 
 [ext_resource path="res://micro-games/flappy/Flappy.gd" type="Script" id=1]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p1.tres" type="Texture" id=2]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p2.tres" type="Texture" id=3]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p3.tres" type="Texture" id=4]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p4.tres" type="Texture" id=5]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p5.tres" type="Texture" id=6]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p6.tres" type="Texture" id=7]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p7.tres" type="Texture" id=8]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p8.tres" type="Texture" id=9]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p9.tres" type="Texture" id=10]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p10.tres" type="Texture" id=11]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p11.tres" type="Texture" id=12]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p12.tres" type="Texture" id=13]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p13.tres" type="Texture" id=14]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p14.tres" type="Texture" id=15]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p15.tres" type="Texture" id=16]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p16.tres" type="Texture" id=17]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p17.tres" type="Texture" id=18]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p18.tres" type="Texture" id=19]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p19.tres" type="Texture" id=20]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p20.tres" type="Texture" id=21]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p21.tres" type="Texture" id=22]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p22.tres" type="Texture" id=23]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p23.tres" type="Texture" id=24]
-[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p24.tres" type="Texture" id=25]
-[ext_resource path="res://Common/Collider.gd" type="Script" id=26]
-[ext_resource path="res://micro-games/flappy/Fork.tscn" type="PackedScene" id=27]
-[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=28]
-[ext_resource path="res://Audio/Assets/MX_Kitchen.ogg" type="AudioStream" id=29]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-001.tres" type="Texture" id=2]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-002.tres" type="Texture" id=3]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-003.tres" type="Texture" id=4]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-004.tres" type="Texture" id=5]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-005.tres" type="Texture" id=6]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-006.tres" type="Texture" id=7]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-007.tres" type="Texture" id=8]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-008.tres" type="Texture" id=9]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-009.tres" type="Texture" id=10]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-010.tres" type="Texture" id=11]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-011.tres" type="Texture" id=12]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-012.tres" type="Texture" id=13]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-013.tres" type="Texture" id=14]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-014.tres" type="Texture" id=15]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-015.tres" type="Texture" id=16]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-016.tres" type="Texture" id=17]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-017.tres" type="Texture" id=18]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-018.tres" type="Texture" id=19]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-019.tres" type="Texture" id=20]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-020.tres" type="Texture" id=21]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-021.tres" type="Texture" id=22]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-022.tres" type="Texture" id=23]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-023.tres" type="Texture" id=24]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-024.tres" type="Texture" id=25]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-025.tres" type="Texture" id=26]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-026.tres" type="Texture" id=27]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-027.tres" type="Texture" id=28]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-028.tres" type="Texture" id=29]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-029.tres" type="Texture" id=30]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-030.tres" type="Texture" id=31]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-031.tres" type="Texture" id=32]
+[ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-032.tres" type="Texture" id=33]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p1.tres" type="Texture" id=34]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p2.tres" type="Texture" id=35]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p3.tres" type="Texture" id=36]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p4.tres" type="Texture" id=37]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p5.tres" type="Texture" id=38]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p6.tres" type="Texture" id=39]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p7.tres" type="Texture" id=40]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p8.tres" type="Texture" id=41]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p9.tres" type="Texture" id=42]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p10.tres" type="Texture" id=43]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p11.tres" type="Texture" id=44]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p12.tres" type="Texture" id=45]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p13.tres" type="Texture" id=46]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p14.tres" type="Texture" id=47]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p15.tres" type="Texture" id=48]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p16.tres" type="Texture" id=49]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p17.tres" type="Texture" id=50]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p18.tres" type="Texture" id=51]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p19.tres" type="Texture" id=52]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p20.tres" type="Texture" id=53]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p21.tres" type="Texture" id=54]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p22.tres" type="Texture" id=55]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p23.tres" type="Texture" id=56]
+[ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p24.tres" type="Texture" id=57]
+[ext_resource path="res://Common/Collider.gd" type="Script" id=58]
+[ext_resource path="res://micro-games/flappy/Sprites/borders_fire.sprites/ll1.tres" type="Texture" id=59]
+[ext_resource path="res://micro-games/flappy/Sprites/borders_fire.sprites/ll2.tres" type="Texture" id=60]
+[ext_resource path="res://micro-games/flappy/Sprites/borders_fire.sprites/ll3.tres" type="Texture" id=61]
+[ext_resource path="res://micro-games/flappy/Sprites/borders_fire.sprites/ll4.tres" type="Texture" id=62]
+[ext_resource path="res://micro-games/flappy/Sprites/borders_fire.sprites/ll5.tres" type="Texture" id=63]
+[ext_resource path="res://micro-games/flappy/Sprites/borders_fire.sprites/ll6.tres" type="Texture" id=64]
+[ext_resource path="res://micro-games/flappy/Fork.tscn" type="PackedScene" id=65]
+[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=66]
+[ext_resource path="res://Audio/Assets/MX_Kitchen.ogg" type="AudioStream" id=67]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Burn",
+"speed": 30.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ],
 "loop": true,
 "name": "Spin",
 "speed": 24.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 512, 10 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ) ],
+"loop": true,
+"name": "Burn",
+"speed": 12.0
+} ]
 
 [node name="Flappy" type="Node2D"]
 script = ExtResource( 1 )
@@ -50,34 +104,45 @@ __meta__ = {
 
 [node name="Tween" type="Tween" parent="."]
 
+[node name="FireContainer" type="Node2D" parent="."]
+editor/display_folded = true
+modulate = Color( 1, 1, 1, 0.705882 )
+
+[node name="FireBg" type="AnimatedSprite" parent="FireContainer"]
+position = Vector2( 0, 90 )
+frames = SubResource( 1 )
+animation = "Burn"
+frame = 14
+centered = false
+
+[node name="FireBg2" type="AnimatedSprite" parent="FireContainer"]
+position = Vector2( 512, 90 )
+frames = SubResource( 1 )
+animation = "Burn"
+frame = 14
+centered = false
+
 [node name="ChickensContainer" type="Node2D" parent="."]
 editor/display_folded = true
-modulate = Color( 1, 1, 1, 0.768627 )
 
 [node name="Chickens" type="AnimatedSprite" parent="ChickensContainer"]
 position = Vector2( 0, -210 )
-frames = SubResource( 1 )
+frames = SubResource( 2 )
 animation = "Spin"
 frame = 11
 centered = false
 
 [node name="Chickens2" type="AnimatedSprite" parent="ChickensContainer"]
 position = Vector2( 0, 390 )
-frames = SubResource( 1 )
+frames = SubResource( 2 )
 animation = "Spin"
 frame = 11
 centered = false
 
 [node name="Ceil" type="Node2D" parent="."]
 editor/display_folded = true
-script = ExtResource( 26 )
+script = ExtResource( 58 )
 type = "ceil"
-
-[node name="ColorRect" type="ColorRect" parent="Ceil"]
-margin_top = -10.0
-margin_right = 1024.0
-margin_bottom = 10.0
-color = Color( 0.596078, 0.0941176, 0.0941176, 1 )
 
 [node name="Area2D" type="Area2D" parent="Ceil"]
 editor/display_folded = true
@@ -85,18 +150,91 @@ position = Vector2( 512, 0 )
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ceil/Area2D"]
-shape = SubResource( 2 )
+shape = SubResource( 3 )
+
+[node name="FireContainer" type="Node2D" parent="Ceil"]
+
+[node name="FIre" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 0, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre2" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 100, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre3" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 200, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre4" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 300, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre5" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 400, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre6" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 500, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre7" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 600, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre8" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 700, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre9" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 800, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre10" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 900, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre11" type="AnimatedSprite" parent="Ceil/FireContainer"]
+position = Vector2( 1000, 22.5 )
+scale = Vector2( 0.5, -0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
 
 [node name="Floor" type="Node2D" parent="."]
 editor/display_folded = true
-script = ExtResource( 26 )
+script = ExtResource( 58 )
 type = "floor"
-
-[node name="ColorRect2" type="ColorRect" parent="Floor"]
-margin_top = 590.0
-margin_right = 1024.0
-margin_bottom = 610.0
-color = Color( 0.596078, 0.0941176, 0.0941176, 1 )
 
 [node name="Area2D" type="Area2D" parent="Floor"]
 editor/display_folded = true
@@ -104,114 +242,192 @@ position = Vector2( 512, 600 )
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Area2D"]
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
-[node name="Forks" type="Node2D" parent="."]
+[node name="FireContainer" type="Node2D" parent="Floor"]
 editor/display_folded = true
 
-[node name="Fork" parent="Forks" instance=ExtResource( 27 )]
+[node name="FIre" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 0, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre2" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 100, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre3" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 200, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre4" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 300, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre5" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 400, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre6" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 500, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre7" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 600, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre8" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 700, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre9" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 800, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre10" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 900, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="FIre11" type="AnimatedSprite" parent="Floor/FireContainer"]
+position = Vector2( 1000, 572.5 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+animation = "Burn"
+frame = 5
+
+[node name="Forks" type="Node2D" parent="."]
+
+[node name="Fork" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 1000, 540 )
 
-[node name="Fork2" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork2" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 2080, -70 )
 rotation = -3.14159
 
-[node name="Fork16" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork16" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 1590, 70 )
 rotation = -3.14159
 
-[node name="Fork3" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork3" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 2080, 640 )
 
-[node name="Fork4" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork4" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 2740, 150 )
 rotation = -3.14159
 
-[node name="Fork5" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork5" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 3284, 500 )
 
-[node name="Fork6" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork6" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 3950, -170 )
 rotation = 3.14159
 
-[node name="Fork7" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork7" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 3950, 540 )
 
-[node name="Fork17" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 4560, 420 )
+[node name="Fork17" parent="Forks" instance=ExtResource( 65 )]
+position = Vector2( 4440, 420 )
 rotation = 0.261799
 
-[node name="Fork18" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 4840, 510 )
+[node name="Fork18" parent="Forks" instance=ExtResource( 65 )]
+position = Vector2( 4770, 520 )
 rotation = 0.261799
 
-[node name="Fork19" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork19" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 5110, 610 )
 rotation = 0.261799
 
-[node name="Fork20" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork20" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 5500, 720 )
 rotation = -0.261799
 
-[node name="Fork26" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 6280, 630 )
+[node name="Fork26" parent="Forks" instance=ExtResource( 65 )]
+position = Vector2( 6570, 620 )
 rotation = -0.261799
 
-[node name="Fork21" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 5430, 30 )
+[node name="Fork21" parent="Forks" instance=ExtResource( 65 )]
+position = Vector2( 5420, -20 )
 rotation = -3.14159
 
-[node name="Fork23" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 5690, 200 )
+[node name="Fork23" parent="Forks" instance=ExtResource( 65 )]
+position = Vector2( 5730, 70 )
 rotation = -3.40339
 
-[node name="Fork24" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 5900, 100 )
+[node name="Fork24" parent="Forks" instance=ExtResource( 65 )]
+position = Vector2( 5940, -30 )
 rotation = -3.40339
 
-[node name="Fork25" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 6110, 20 )
+[node name="Fork25" parent="Forks" instance=ExtResource( 65 )]
+position = Vector2( 6150, -110 )
 rotation = -3.40339
 
-[node name="Fork8" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork8" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7349, 30 )
 rotation = 4.71238
 
-[node name="Fork9" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork9" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7349, 100 )
 rotation = 4.71238
 
-[node name="Fork10" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork10" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7349, 170 )
 rotation = 4.71238
 
-[node name="Fork11" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork11" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7349, 240 )
 rotation = 4.71238
 
-[node name="Fork22" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork22" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7349, 300 )
 rotation = 4.71238
 
-[node name="Fork12" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork12" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7350, 360 )
 rotation = 4.71238
 
-[node name="Fork13" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork13" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7350, 430 )
 rotation = 4.71238
 
-[node name="Fork14" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork14" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7350, 500 )
 rotation = 4.71238
 
-[node name="Fork15" parent="Forks" instance=ExtResource( 27 )]
+[node name="Fork15" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 7350, 570 )
 rotation = 4.71238
 
-[node name="Talisman" parent="Forks" instance=ExtResource( 28 )]
+[node name="Talisman" parent="Forks" instance=ExtResource( 66 )]
 position = Vector2( 6860, 300 )
 
 [node name="MX_Kitchen" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 29 )
-
+stream = ExtResource( 67 )
