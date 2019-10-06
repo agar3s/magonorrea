@@ -15,4 +15,3 @@ __meta__ = {
 [node name="HUD" parent="." instance=ExtResource( 2 )]
 
 [node name="Node2D" type="Node" parent="."]
-

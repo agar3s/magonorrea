@@ -9,7 +9,7 @@ var current_minigame
 var hen_form = load("res://Wizard/Hen.tscn")
 
 func _ready():
-	current_minigame = runner.instance()
+	current_minigame = flappy.instance()
 	current_minigame.connect("WIN", self, "_on_win")
 	current_minigame.connect("DIE", self, "_on_die")
 	current_minigame.connect("PROGRESS", $HUD, "update_progress")
