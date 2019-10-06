@@ -5,30 +5,39 @@ signal WIN
 signal PROGRESS
 
 const GRAVITY = 980
-onready var level_velocity_x = $Wizard.fly_x
+var level_velocity_x = 0
 
 export (bool) var debug_can_die = true
+
 var paused = true
 var total_distance = 0
+var wizard
+var chickens_threshold = -210
+
 func _ready():
+	print("Waaaaaaaaaaat")
 	# conectar escuchadores de señales
-	$Wizard.connect("action_done", self, "make_fly")
 	for fork in $Forks.get_children():
 		fork.connect('collision_detected', self, '_on_wizard_collide')
 	$Ceil.connect("collision_detected", self, '_on_wizard_collide')
 	$Floor.connect("collision_detected", self, '_on_wizard_collide')
-	total_distance = $Forks/Talisman.position.x - $Wizard.position.x - $Wizard.collision_width
+	$Tween.connect("tween_completed", self, "roast")
+
+	# poner los pollos a asar
+	for c in $ChickensContainer.get_children():
+		c.play("Spin")
+	roast()
 
 func _process(delta):
 	if paused: return
 	$Forks.global_position.x -= delta * level_velocity_x
-	$Wizard.fall(GRAVITY)
+	wizard.fall(GRAVITY)
 	if int($Forks.global_position.x) % 10 == 0:
 		emit_signal('PROGRESS', int(-100*($Forks.global_position.x)/total_distance))
 
 func make_fly():
 	if paused: return
-	$Wizard.fly()
+	wizard.fly()
 
 func _on_wizard_collide(element_type):
 	if element_type=='fork' || element_type=='ceil' || element_type=='floor':
@@ -42,11 +51,37 @@ func start():
 func die():
 	if !debug_can_die: return
 	get_tree().paused = true
-	$Wizard.die()
+	wizard.die()
 	emit_signal("DIE")
 
 func win():
 	get_tree().paused = true
 	emit_signal("WIN")
 
+func set_wizard_form(form):
+	wizard = form.instance()
+	wizard.set_name("Wizard")
+	wizard.set_position(Vector2(260, 90))
+	add_child(wizard)
+	wizard.connect("action_done", self, "make_fly")
+	level_velocity_x = wizard.fly_x
+	total_distance = $Forks/Talisman.position.x - wizard.position.x - wizard.collision_width
 
+func roast(a = 0, b = 0):
+	for c in $ChickensContainer.get_children():
+		if c.position.y == chickens_threshold:
+			c.z_index = -1
+			c.self_modulate = Color(1.0, 1.0, 1.0, 0.5)
+		else:
+			c.z_index = 0
+			c.self_modulate = Color(1.0, 1.0, 1.0, 1.0)
+		$Tween.interpolate_property(
+			c,
+			"position:y",
+			c.position.y,
+			chickens_threshold if c.position.y > chickens_threshold else 495,
+			3,
+			Tween.TRANS_SINE,
+			Tween.EASE_IN_OUT
+		)
+		$Tween.start()

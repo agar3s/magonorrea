@@ -30,27 +30,29 @@ const FALL_X = 35
 # warning-ignore:unused_argument
 func _physics_process(delta):
 	if dead: return
-	mov.x = 0
-	mov = move_and_slide(mov)
+	self.mov.x = 0
+	self.mov = move_and_slide(self.mov)
 
 	if Input.is_action_just_released("ui_action"):
 		emit_signal("action_done")
 
 
 func fly():
-	print("fly!!!!")
-	mov.y = max(mov.y - fly_y, -max_vel_y)
+	self.mov.y = max(self.mov.y - self.fly_y, -self.max_vel_y)
 
 
 func fall(gravity):
-	if dead: return
+	if self.dead: return
 
-	mov.y = min((gravity - wind_resistance) * get_physics_process_delta_time() + mov.y, max_vel_y)
-	$Sprite.rotation_degrees = -10 + 20*mov.y/max_vel_y
+	self.mov.y = min(
+		(gravity - self.wind_resistance) * get_physics_process_delta_time() + self.mov.y,
+		self.max_vel_y
+	)
+	$Sprite.rotation_degrees = -10 + 20*self.mov.y/self.max_vel_y
 
 
 func die():
-	dead = true
+	self.dead = true
 	$Sprite.rotation_degrees = -180
 
 
