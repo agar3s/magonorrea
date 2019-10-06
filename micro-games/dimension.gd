@@ -54,3 +54,4 @@ func check_debug():
 	if debug_form != null:
 		set_wizard_form(debug_form)
 		paused = false
+		start()

@@ -46,6 +46,7 @@ func start_countdown(form):
 	
 func start_minigame():
 	current_minigame.paused = false
+	current_minigame.start()
 
 func disconnect_minigame():
 	current_minigame.disconnect("WIN", self, "_on_win")

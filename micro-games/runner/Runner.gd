@@ -45,4 +45,6 @@ func set_wizard_form(form):
 	.set_wizard_form(form)
 	level_velocity_x = wizard.ground_speed_x
 	total_distance = _obstacles.get_node("Talisman").position.x - _obstacles.position.x - wizard.collision_width
+
+func start():
 	$AnimationPlayer.play("Rotate", -1, 3.0)
