@@ -29,7 +29,7 @@
 [ext_resource path="res://micro-games/flappy/Fork.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=28]
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
 "loop": true,
@@ -50,18 +50,19 @@ __meta__ = {
 [node name="Tween" type="Tween" parent="."]
 
 [node name="ChickensContainer" type="Node2D" parent="."]
+editor/display_folded = true
 modulate = Color( 1, 1, 1, 0.768627 )
 
 [node name="Chickens" type="AnimatedSprite" parent="ChickensContainer"]
 position = Vector2( 0, -210 )
-frames = SubResource( 3 )
+frames = SubResource( 1 )
 animation = "Spin"
 frame = 11
 centered = false
 
 [node name="Chickens2" type="AnimatedSprite" parent="ChickensContainer"]
 position = Vector2( 0, 390 )
-frames = SubResource( 3 )
+frames = SubResource( 1 )
 animation = "Spin"
 frame = 11
 centered = false
@@ -71,7 +72,14 @@ editor/display_folded = true
 script = ExtResource( 26 )
 type = "ceil"
 
+[node name="ColorRect" type="ColorRect" parent="Ceil"]
+margin_top = -10.0
+margin_right = 1024.0
+margin_bottom = 10.0
+color = Color( 0.596078, 0.0941176, 0.0941176, 1 )
+
 [node name="Area2D" type="Area2D" parent="Ceil"]
+editor/display_folded = true
 position = Vector2( 512, 0 )
 collision_mask = 0
 
@@ -83,7 +91,14 @@ editor/display_folded = true
 script = ExtResource( 26 )
 type = "floor"
 
+[node name="ColorRect2" type="ColorRect" parent="Floor"]
+margin_top = 590.0
+margin_right = 1024.0
+margin_bottom = 610.0
+color = Color( 0.596078, 0.0941176, 0.0941176, 1 )
+
 [node name="Area2D" type="Area2D" parent="Floor"]
+editor/display_folded = true
 position = Vector2( 512, 600 )
 collision_mask = 0
 
@@ -97,58 +112,101 @@ editor/display_folded = true
 position = Vector2( 1000, 540 )
 
 [node name="Fork2" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 1350, 0 )
+position = Vector2( 2080, -70 )
+rotation = -3.14159
+
+[node name="Fork16" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 1590, 70 )
 rotation = -3.14159
 
 [node name="Fork3" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 1350, 710 )
+position = Vector2( 2080, 640 )
 
 [node name="Fork4" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 1680, 150 )
+position = Vector2( 2740, 150 )
 rotation = -3.14159
 
 [node name="Fork5" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 2224, 500 )
+position = Vector2( 3284, 500 )
 
 [node name="Fork6" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 2890, -40 )
+position = Vector2( 3950, -170 )
 rotation = 3.14159
 
 [node name="Fork7" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 2890, 670 )
+position = Vector2( 3950, 540 )
+
+[node name="Fork17" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 4560, 420 )
+rotation = 0.261799
+
+[node name="Fork18" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 4840, 510 )
+rotation = 0.261799
+
+[node name="Fork19" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 5110, 610 )
+rotation = 0.261799
+
+[node name="Fork20" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 5500, 720 )
+rotation = -0.261799
+
+[node name="Fork26" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 6280, 630 )
+rotation = -0.261799
+
+[node name="Fork21" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 5430, 30 )
+rotation = -3.14159
+
+[node name="Fork23" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 5690, 200 )
+rotation = -3.40339
+
+[node name="Fork24" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 5900, 100 )
+rotation = -3.40339
+
+[node name="Fork25" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 6110, 20 )
+rotation = -3.40339
 
 [node name="Fork8" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 3990, 50 )
+position = Vector2( 7349, 30 )
 rotation = 4.71238
 
 [node name="Fork9" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 3990, 120 )
+position = Vector2( 7349, 100 )
 rotation = 4.71238
 
 [node name="Fork10" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 3990, 200 )
+position = Vector2( 7349, 170 )
 rotation = 4.71238
 
 [node name="Fork11" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 3990, 270 )
+position = Vector2( 7349, 240 )
+rotation = 4.71238
+
+[node name="Fork22" parent="Forks" instance=ExtResource( 27 )]
+position = Vector2( 7349, 300 )
 rotation = 4.71238
 
 [node name="Fork12" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 3990, 330 )
+position = Vector2( 7350, 360 )
 rotation = 4.71238
 
 [node name="Fork13" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 3990, 400 )
+position = Vector2( 7350, 430 )
 rotation = 4.71238
 
 [node name="Fork14" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 3990, 470 )
+position = Vector2( 7350, 500 )
 rotation = 4.71238
 
 [node name="Fork15" parent="Forks" instance=ExtResource( 27 )]
-position = Vector2( 3990, 540 )
+position = Vector2( 7350, 570 )
 rotation = 4.71238
 
 [node name="Talisman" parent="Forks" instance=ExtResource( 28 )]
-position = Vector2( 3501, 300 )
-
+position = Vector2( 6860, 300 )

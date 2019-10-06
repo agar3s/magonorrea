@@ -19,10 +19,10 @@ func _ready():
 	start_countdown()
 
 func start_countdown():
+	current_minigame.set_wizard_form(hen_form)
 	$HUD.start_countdown('fly')
 	
 func start_minigame():
-	current_minigame.set_wizard_form(hen_form)
 	current_minigame.paused = false
 
 func _on_win():
