@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Hen_Jump_01.ogg-59a8c49124855f5829d621d2395c82b9.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/SFX_Hen_Jump_01.ogg"
+dest_files=[ "res://.import/SFX_Hen_Jump_01.ogg-59a8c49124855f5829d621d2395c82b9.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

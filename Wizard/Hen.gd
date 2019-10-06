@@ -7,9 +7,13 @@ func _ready():
 func fly():
 	.fly()
 	$Sprite.play("Explode")
+	$SFX_Jump.playsound()
+	$VO_Jump.playsound()
 
 func die():
 	$Sprite.play("Die")
+	if dead == false:
+		$Die.playsound()
 	.die()
 
 func _on_animation_finished():
