@@ -8,9 +8,9 @@ var dimensions = [flappy, runner]
 
 var current_minigame
 # CONTROLLER
-var hen_form = load("res://Wizard/Hen.tscn")
-var ostrich_form = load("res://Wizard/Ostrich.tscn")
-var forms = [hen_form, ostrich_form]
+#var hen_form = load("res://Wizard/Hen.tscn")
+#var ostrich_form = load("res://Wizard/Ostrich.tscn")
+#var forms = [hen_form, ostrich_form]
 
 func _ready():
 	randomize()
@@ -32,6 +32,7 @@ func load_minigame(form):
 	$Nowhere.hide()
 	var next = randi()%len(dimensions)
 	current_minigame = dimensions[next].instance()
+	current_minigame.debug_wizard_form = ""
 	current_minigame.connect("WIN", self, "_on_win")
 	current_minigame.connect("DIE", self, "_on_die")
 	current_minigame.connect("PROGRESS", $HUD, "update_progress")
@@ -40,11 +41,7 @@ func load_minigame(form):
 	start_countdown(form)
 
 func start_countdown(form):
-	match form:
-		'hen':
-			current_minigame.set_wizard_form(hen_form)
-		'ostrich':
-			current_minigame.set_wizard_form(ostrich_form)
+	current_minigame.set_wizard_form(Loader.get_form(form))
 	$HUD.start_countdown('fly')
 	
 func start_minigame():

@@ -17,8 +17,10 @@ __meta__ = {
 "_edit_horizontal_guides_": [ 458.656 ]
 }
 wizard_starting_pos = Vector2( 260, 400 )
+debug_wizard_form = "Hen"
 
 [node name="Ceil" type="StaticBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 510, 170 )
 __meta__ = {
 "_edit_group_": true
@@ -28,6 +30,7 @@ __meta__ = {
 shape = SubResource( 1 )
 
 [node name="Floor" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 510, 450 )
 script = ExtResource( 2 )
 type = "floor"
@@ -47,6 +50,7 @@ position = Vector2( -250, -5 )
 shape = SubResource( 2 )
 
 [node name="Obstacles" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Pine" parent="Obstacles" instance=ExtResource( 3 )]
 position = Vector2( 880, 400 )
@@ -59,4 +63,3 @@ position = Vector2( 1060, 230 )
 
 [node name="Talisman" parent="Obstacles" instance=ExtResource( 4 )]
 position = Vector2( 1766.65, 293.365 )
-

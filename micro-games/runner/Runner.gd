@@ -5,7 +5,10 @@ var wizard_on_ground = false
 func _ready():
 	for obstacle in $Obstacles.get_children():
 		obstacle.connect('collision_detected', self, '_on_wizard_collide')
-	$Floor.connect("collision_detected", self, '_on_wizard_collide')	
+	$Floor.connect("collision_detected", self, '_on_wizard_collide')
+	
+	# verificar si hay que cargar algo pa' debug
+	check_debug()
 
 func make_fly():
 	if paused: return

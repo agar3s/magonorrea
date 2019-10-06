@@ -19,6 +19,7 @@ position = Vector2( 512, 300 )
 texture = ExtResource( 2 )
 
 [node name="Blocks" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Block" parent="Blocks" instance=ExtResource( 3 )]
 position = Vector2( 56, 276 )
@@ -83,4 +84,3 @@ position = Vector2( 968, 180 )
 [node name="Wizard" parent="." instance=ExtResource( 4 )]
 position = Vector2( 200, 228 )
 collision_width = 20
-

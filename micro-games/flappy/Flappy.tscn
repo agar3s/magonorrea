@@ -96,11 +96,13 @@ animations = [ {
 } ]
 
 [node name="Flappy" type="Node2D"]
+editor/display_folded = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 300.0, 600.0 ],
 "_edit_vertical_guides_": [ 512.0 ]
 }
+debug_wizard_form = "Hen"
 
 [node name="Tween" type="Tween" parent="."]
 
@@ -355,15 +357,15 @@ rotation = 3.14159
 position = Vector2( 3950, 540 )
 
 [node name="Fork17" parent="Forks" instance=ExtResource( 65 )]
-position = Vector2( 4440, 420 )
+position = Vector2( 4420, 510 )
 rotation = 0.261799
 
 [node name="Fork18" parent="Forks" instance=ExtResource( 65 )]
-position = Vector2( 4770, 520 )
+position = Vector2( 4750, 610 )
 rotation = 0.261799
 
 [node name="Fork19" parent="Forks" instance=ExtResource( 65 )]
-position = Vector2( 5110, 610 )
+position = Vector2( 5080, 740 )
 rotation = 0.261799
 
 [node name="Fork20" parent="Forks" instance=ExtResource( 65 )]

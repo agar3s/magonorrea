@@ -9,6 +9,7 @@ var level_velocity_x = 0
 
 export (bool) var debug_can_die = true
 export (Vector2) var wizard_starting_pos = Vector2(260, 90)
+export (String, "", "Hen", "Ostrich") var debug_wizard_form = ""
 
 var paused = true
 var total_distance = 0
@@ -46,3 +47,10 @@ func set_wizard_form(form):
 	wizard.set_position(wizard_starting_pos)
 	add_child(wizard)
 	wizard.connect("action_done", self, "wizard_action")
+
+func check_debug():
+	# verificar si hay que cargar algo pa' debug
+	var debug_form = Loader.get_form(debug_wizard_form)
+	if debug_form != null:
+		set_wizard_form(debug_form)
+		paused = false

@@ -3,7 +3,6 @@ extends "res://micro-games/dimension.gd"
 var chickens_threshold = -210
 
 func _ready():
-	print("Waaaaaaaaaaat")
 	# conectar escuchadores de señales
 	for fork in $Forks.get_children():
 		fork.connect('collision_detected', self, '_on_wizard_collide')
@@ -26,6 +25,9 @@ func _ready():
 	
 	# play musica
 	$MX_Kitchen.play()
+	
+	# verificar si hay que cargar algo pa' debug
+	check_debug()
 
 func _process(delta):
 	if paused: return
