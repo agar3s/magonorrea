@@ -1,6 +1,5 @@
 extends "res://Common/Collider.gd"
 
-var velocity_y = 20
 var movement_threshold = 80
 var down = true
 

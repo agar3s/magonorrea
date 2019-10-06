@@ -16,6 +16,10 @@ var fly_y = 550
 var wind_resistance = 200
 # entre más grande es más difícil hacerla subir
 var max_vel_y = 400
+# velocidad de salto
+var jump_speed_y = -300
+# que tan rapido corre
+var ground_speed_x = 350
 # └----------------------------------------------------------------------------┘
 
 var mov = Vector2()
@@ -34,6 +38,7 @@ func _physics_process(delta):
 
 
 func fly():
+	print("fly!!!!")
 	mov.y = max(mov.y - fly_y, -max_vel_y)
 
 
@@ -47,3 +52,8 @@ func fall(gravity):
 func die():
 	dead = true
 	$Sprite.rotation_degrees = -180
+
+
+func jump():
+	print("jump!!!!")
+	mov.y = jump_speed_y

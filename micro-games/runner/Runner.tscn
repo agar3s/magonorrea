@@ -1,0 +1,65 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://micro-games/runner/Runner.gd" type="Script" id=1]
+[ext_resource path="res://Wizard/Wizard.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Common/Collider.gd" type="Script" id=3]
+[ext_resource path="res://micro-games/runner/Pine.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 510, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 50, 10 )
+
+[node name="Runner" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 458.656 ]
+}
+
+[node name="Wizard" parent="." instance=ExtResource( 2 )]
+position = Vector2( 260, 400 )
+
+[node name="Ceil" type="StaticBody2D" parent="."]
+position = Vector2( 510, 170 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Ceil"]
+shape = SubResource( 1 )
+
+[node name="Floor" type="Node2D" parent="."]
+position = Vector2( 510, 450 )
+script = ExtResource( 3 )
+type = "floor"
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Floor"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor/StaticBody2D2"]
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="Floor"]
+position = Vector2( -250, -5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Area2D"]
+shape = SubResource( 2 )
+
+[node name="Obstacles" type="Node2D" parent="."]
+
+[node name="Pine" parent="Obstacles" instance=ExtResource( 4 )]
+position = Vector2( 880, 400 )
+
+[node name="Pine2" parent="Obstacles" instance=ExtResource( 4 )]
+position = Vector2( 1269, 400 )
+
+[node name="Pine3" parent="Obstacles" instance=ExtResource( 4 )]
+position = Vector2( 1060, 230 )
+
+[node name="Talisman" parent="Obstacles" instance=ExtResource( 5 )]
+position = Vector2( 1766.65, 293.365 )
+
