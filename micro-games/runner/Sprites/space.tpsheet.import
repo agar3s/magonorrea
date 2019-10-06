@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/space.tpsheet-39ed010dded57720e623c68afc3fa2de.res"
+
+[deps]
+
+files=[ "res://micro-games/runner/Sprites/space.sprites/g1.tres", "res://micro-games/runner/Sprites/space.sprites/g2.tres", "res://micro-games/runner/Sprites/space.sprites/g3.tres", "res://micro-games/runner/Sprites/space.sprites/g4.tres", "res://micro-games/runner/Sprites/space.sprites/g5.tres", "res://micro-games/runner/Sprites/space.sprites/g6.tres", "res://micro-games/runner/Sprites/space.sprites/g7.tres", "res://micro-games/runner/Sprites/space.sprites/g8.tres", "res://micro-games/runner/Sprites/space.sprites/g9.tres", "res://micro-games/runner/Sprites/space.sprites/g10.tres", "res://micro-games/runner/Sprites/space.sprites/g11.tres", "res://micro-games/runner/Sprites/space.sprites/g12.tres", "res://micro-games/runner/Sprites/space.sprites/g13.tres", "res://micro-games/runner/Sprites/space.sprites/g14.tres", "res://micro-games/runner/Sprites/space.sprites/g15.tres", "res://micro-games/runner/Sprites/space.sprites/g16.tres", "res://micro-games/runner/Sprites/space.sprites/g17.tres" ]
+
+source_file="res://micro-games/runner/Sprites/space.tpsheet"
+dest_files=[ "res://.import/space.tpsheet-39ed010dded57720e623c68afc3fa2de.res", "res://micro-games/runner/Sprites/space.sprites/g1.tres", "res://micro-games/runner/Sprites/space.sprites/g2.tres", "res://micro-games/runner/Sprites/space.sprites/g3.tres", "res://micro-games/runner/Sprites/space.sprites/g4.tres", "res://micro-games/runner/Sprites/space.sprites/g5.tres", "res://micro-games/runner/Sprites/space.sprites/g6.tres", "res://micro-games/runner/Sprites/space.sprites/g7.tres", "res://micro-games/runner/Sprites/space.sprites/g8.tres", "res://micro-games/runner/Sprites/space.sprites/g9.tres", "res://micro-games/runner/Sprites/space.sprites/g10.tres", "res://micro-games/runner/Sprites/space.sprites/g11.tres", "res://micro-games/runner/Sprites/space.sprites/g12.tres", "res://micro-games/runner/Sprites/space.sprites/g13.tres", "res://micro-games/runner/Sprites/space.sprites/g14.tres", "res://micro-games/runner/Sprites/space.sprites/g15.tres", "res://micro-games/runner/Sprites/space.sprites/g16.tres", "res://micro-games/runner/Sprites/space.sprites/g17.tres" ]
+
+[params]
+

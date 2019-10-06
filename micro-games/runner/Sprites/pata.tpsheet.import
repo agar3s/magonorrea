@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/pata.tpsheet-0a56372bfb56f5261a1630eb31e459e4.res"
+
+[deps]
+
+files=[ "res://micro-games/runner/Sprites/pata.sprites/c1.tres", "res://micro-games/runner/Sprites/pata.sprites/c2.tres", "res://micro-games/runner/Sprites/pata.sprites/c3.tres", "res://micro-games/runner/Sprites/pata.sprites/c4.tres", "res://micro-games/runner/Sprites/pata.sprites/c5.tres" ]
+
+source_file="res://micro-games/runner/Sprites/pata.tpsheet"
+dest_files=[ "res://.import/pata.tpsheet-0a56372bfb56f5261a1630eb31e459e4.res", "res://micro-games/runner/Sprites/pata.sprites/c1.tres", "res://micro-games/runner/Sprites/pata.sprites/c2.tres", "res://micro-games/runner/Sprites/pata.sprites/c3.tres", "res://micro-games/runner/Sprites/pata.sprites/c4.tres", "res://micro-games/runner/Sprites/pata.sprites/c5.tres" ]
+
+[params]
+

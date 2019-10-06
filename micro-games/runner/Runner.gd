@@ -1,11 +1,16 @@
 extends "res://micro-games/dimension.gd"
 
 var wizard_on_ground = false
+onready var _obstacles = $Planet/Obstacles
 
 func _ready():
-	for obstacle in $Obstacles.get_children():
+	for obstacle in _obstacles.get_children():
+		if obstacle.has_node("AnimatedSprite"):
+			obstacle.get_node("AnimatedSprite").play("slap")
 		obstacle.connect('collision_detected', self, '_on_wizard_collide')
 	$Floor.connect("collision_detected", self, '_on_wizard_collide')
+	
+	$Space.play("travel")
 	
 	# verificar si hay que cargar algo pa' debug
 	check_debug()
@@ -22,11 +27,11 @@ func make_fly():
 
 func _process(delta):
 	if paused: return
-	$Obstacles.global_position.x -= delta * self.level_velocity_x
+	# _obstacles.global_position.x -= delta * self.level_velocity_x
 	wizard.fall(GRAVITY)
 	
-	if int($Obstacles.global_position.x) % 10 == 0:
-		emit_signal('PROGRESS', int(-100*($Obstacles.global_position.x)/total_distance))
+	if int(_obstacles.global_position.x) % 10 == 0:
+		emit_signal('PROGRESS', int(-100*(_obstacles.global_position.x)/total_distance))
 
 func _on_wizard_collide(element_type):
 	._on_wizard_collide(element_type)
@@ -39,4 +44,5 @@ func _on_wizard_collide(element_type):
 func set_wizard_form(form):
 	.set_wizard_form(form)
 	level_velocity_x = wizard.ground_speed_x
-	total_distance = $Obstacles/Talisman.position.x - $Obstacles.position.x - wizard.collision_width
+	total_distance = _obstacles.get_node("Talisman").position.x - _obstacles.position.x - wizard.collision_width
+	$AnimationPlayer.play("Rotate", -1, 3.0)

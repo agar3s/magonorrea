@@ -1,0 +1,273 @@
+{
+	"textures": [
+		{
+			"image": "space.png",
+			"size": {
+				"w": 3000,
+				"h": 1500
+			},
+			"sprites": [
+				{
+					"filename": "g1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g2.png",
+					"region": {
+						"x": 500,
+						"y": 0,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g3.png",
+					"region": {
+						"x": 1000,
+						"y": 0,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g4.png",
+					"region": {
+						"x": 1500,
+						"y": 0,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g5.png",
+					"region": {
+						"x": 2000,
+						"y": 0,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g6.png",
+					"region": {
+						"x": 2500,
+						"y": 0,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g7.png",
+					"region": {
+						"x": 0,
+						"y": 500,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g8.png",
+					"region": {
+						"x": 500,
+						"y": 500,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g9.png",
+					"region": {
+						"x": 1000,
+						"y": 500,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g10.png",
+					"region": {
+						"x": 1500,
+						"y": 500,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g11.png",
+					"region": {
+						"x": 2000,
+						"y": 500,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g12.png",
+					"region": {
+						"x": 2500,
+						"y": 500,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g13.png",
+					"region": {
+						"x": 0,
+						"y": 1000,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g14.png",
+					"region": {
+						"x": 500,
+						"y": 1000,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g15.png",
+					"region": {
+						"x": 1000,
+						"y": 1000,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g16.png",
+					"region": {
+						"x": 1500,
+						"y": 1000,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "g17.png",
+					"region": {
+						"x": 2000,
+						"y": 1000,
+						"w": 500,
+						"h": 500
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:7f6c1834a521fe11bd3f097e5ed0bab8:a7fcf56bf7c583893ef86ad65f596ae7:e82f8fb51adc052097bb3f600f60345b$"
+	}
+}

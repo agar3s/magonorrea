@@ -1,20 +1,36 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://micro-games/runner/Pine.gd" type="Script" id=1]
-[ext_resource path="res://micro-games/runner/Sprites/pine.png" type="Texture" id=2]
+[ext_resource path="res://micro-games/runner/Sprites/pata.sprites/c1.tres" type="Texture" id=2]
+[ext_resource path="res://micro-games/runner/Sprites/pata.sprites/c2.tres" type="Texture" id=3]
+[ext_resource path="res://micro-games/runner/Sprites/pata.sprites/c3.tres" type="Texture" id=4]
+[ext_resource path="res://micro-games/runner/Sprites/pata.sprites/c4.tres" type="Texture" id=5]
+[ext_resource path="res://micro-games/runner/Sprites/pata.sprites/c5.tres" type="Texture" id=6]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 15, 50 )
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "slap",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 55, 80 )
 
 [node name="Pine" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 1, 1.4 )
-texture = ExtResource( 2 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -30 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "slap"
 
 [node name="Area2D" type="Area2D" parent="."]
+editor/display_folded = true
+position = Vector2( 0, -30 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource( 1 )
-
+position = Vector2( 0, 20 )
+shape = SubResource( 2 )

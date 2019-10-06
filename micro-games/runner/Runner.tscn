@@ -1,9 +1,70 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://micro-games/runner/Runner.gd" type="Script" id=1]
-[ext_resource path="res://Common/Collider.gd" type="Script" id=2]
-[ext_resource path="res://micro-games/runner/Pine.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=4]
+[ext_resource path="res://micro-games/runner/Sprites/bg.png" type="Texture" id=2]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g1.tres" type="Texture" id=3]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g2.tres" type="Texture" id=4]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g3.tres" type="Texture" id=5]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g4.tres" type="Texture" id=6]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g5.tres" type="Texture" id=7]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g6.tres" type="Texture" id=8]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g7.tres" type="Texture" id=9]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g8.tres" type="Texture" id=10]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g9.tres" type="Texture" id=11]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g10.tres" type="Texture" id=12]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g11.tres" type="Texture" id=13]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g12.tres" type="Texture" id=14]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g13.tres" type="Texture" id=15]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g14.tres" type="Texture" id=16]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g15.tres" type="Texture" id=17]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g16.tres" type="Texture" id=18]
+[ext_resource path="res://micro-games/runner/Sprites/space.sprites/g17.tres" type="Texture" id=19]
+[ext_resource path="res://micro-games/runner/Sprites/saturn.png" type="Texture" id=20]
+[ext_resource path="res://micro-games/runner/Sprites/caturro.png" type="Texture" id=21]
+[ext_resource path="res://micro-games/runner/Pine.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Common/Collider.gd" type="Script" id=24]
+
+[sub_resource type="Animation" id=4]
+resource_name = "Rotate"
+length = 30.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Planet:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 30 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -360.0 ]
+}
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "travel",
+"speed": 16.0
+} ]
+
+[sub_resource type="Animation" id=5]
+resource_name = "Move"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( -320, 540 ), Vector2( 1400, -90 ) ]
+}
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 510, 10 )
@@ -14,25 +75,62 @@ extents = Vector2( 50, 10 )
 [node name="Runner" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 458.656 ]
+"_edit_horizontal_guides_": [ 458.656, 360.0 ],
+"_edit_vertical_guides_": [ 510.0 ]
 }
-wizard_starting_pos = Vector2( 260, 400 )
+wizard_starting_pos = Vector2( 512, 359 )
 debug_wizard_form = "Hen"
 
-[node name="Ceil" type="StaticBody2D" parent="."]
-editor/display_folded = true
-position = Vector2( 510, 170 )
-__meta__ = {
-"_edit_group_": true
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Rotate = SubResource( 4 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Ceil"]
-shape = SubResource( 1 )
+[node name="Background" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Space" type="AnimatedSprite" parent="."]
+position = Vector2( 512, 190 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+animation = "travel"
+
+[node name="Saturn" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( -320, 540 )
+texture = ExtResource( 20 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Saturn"]
+autoplay = "Move"
+anims/Move = SubResource( 5 )
+
+[node name="Planet" type="Node2D" parent="."]
+position = Vector2( 512, 750 )
+
+[node name="Background" type="Sprite" parent="Planet"]
+texture = ExtResource( 21 )
+
+[node name="Obstacles" type="Node2D" parent="Planet"]
+position = Vector2( -512, -750 )
+
+[node name="Pine" parent="Planet/Obstacles" instance=ExtResource( 22 )]
+position = Vector2( 930, 690 )
+rotation = 1.57079
+
+[node name="Pine2" parent="Planet/Obstacles" instance=ExtResource( 22 )]
+position = Vector2( 450, 1150 )
+rotation = 3.40339
+
+[node name="Pine3" parent="Planet/Obstacles" instance=ExtResource( 22 )]
+position = Vector2( 840, 1020 )
+rotation = 2.35619
+
+[node name="Talisman" parent="Planet/Obstacles" instance=ExtResource( 23 )]
+position = Vector2( 60, 820 )
 
 [node name="Floor" type="Node2D" parent="."]
 editor/display_folded = true
-position = Vector2( 510, 450 )
-script = ExtResource( 2 )
+position = Vector2( 510, 370 )
+script = ExtResource( 24 )
 type = "floor"
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Floor"]
@@ -44,22 +142,7 @@ __meta__ = {
 shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="Floor"]
-position = Vector2( -250, -5 )
+editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Area2D"]
 shape = SubResource( 2 )
-
-[node name="Obstacles" type="Node2D" parent="."]
-editor/display_folded = true
-
-[node name="Pine" parent="Obstacles" instance=ExtResource( 3 )]
-position = Vector2( 880, 400 )
-
-[node name="Pine2" parent="Obstacles" instance=ExtResource( 3 )]
-position = Vector2( 1269, 400 )
-
-[node name="Pine3" parent="Obstacles" instance=ExtResource( 3 )]
-position = Vector2( 1060, 230 )
-
-[node name="Talisman" parent="Obstacles" instance=ExtResource( 4 )]
-position = Vector2( 1766.65, 293.365 )

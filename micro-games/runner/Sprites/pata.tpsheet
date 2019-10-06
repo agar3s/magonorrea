@@ -1,0 +1,93 @@
+{
+	"textures": [
+		{
+			"image": "pata.png",
+			"size": {
+				"w": 1250,
+				"h": 380
+			},
+			"sprites": [
+				{
+					"filename": "c1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 380
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "c2.png",
+					"region": {
+						"x": 250,
+						"y": 0,
+						"w": 250,
+						"h": 380
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "c3.png",
+					"region": {
+						"x": 500,
+						"y": 0,
+						"w": 250,
+						"h": 380
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "c4.png",
+					"region": {
+						"x": 750,
+						"y": 0,
+						"w": 250,
+						"h": 380
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "c5.png",
+					"region": {
+						"x": 1000,
+						"y": 0,
+						"w": 250,
+						"h": 380
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:288921bbdf58b1fe5d94981f74cbbb9a:50c1db9dc586a4114cb4fc4fb628a8e2:46381ada5ccd35a2195872b2b4a7b82b$"
+	}
+}
