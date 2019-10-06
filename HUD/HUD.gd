@@ -2,6 +2,9 @@ extends CanvasLayer
 
 signal COUNTDOWN_OVER
 
+func _ready():
+	self.clean()
+
 func show_win():
 	$Container/Message.text = 'WIN!!'
 
@@ -22,3 +25,7 @@ func start_countdown(message):
 
 func update_progress(progress):
 	$Container/Progress.text = str(progress)
+
+func clean():
+	$Container/Message.text = ''
+	$Container/Progress.text = ''

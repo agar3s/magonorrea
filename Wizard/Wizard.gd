@@ -3,6 +3,7 @@ extends KinematicBody2D
 # definir las señasles
 signal action_done
 
+export (bool) var in_nowhere = false
 # estos valores cambiarán dependiendo de la cosa en la que se haya
 # transformado el mago --------------------------------------------------------┐
 # warning-ignore:unused_class_variable
@@ -33,7 +34,7 @@ func _ready():
 
 # warning-ignore:unused_argument
 func _physics_process(delta):
-	if dead: return
+	if dead or in_nowhere: return
 	self.mov = move_and_slide(self.mov)
 
 	if Input.is_action_just_released("ui_action"):

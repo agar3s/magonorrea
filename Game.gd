@@ -14,16 +14,21 @@ var forms = [hen_form, ostrich_form]
 
 func _ready():
 	randomize()
+
+	# conectar escuchadores de señales
 	$Nowhere.connect("ENTER_DIMENSION", self, 'load_minigame')
 	$HUD.connect('COUNTDOWN_OVER', self, 'start_minigame')
+
 	load_portal()
 
 func load_portal():
+	$HUD.clean()
+	
 	if current_minigame: current_minigame.queue_free()
 	$Nowhere.show()
 	$Nowhere.start()
 
-func load_minigame():
+func load_minigame(form):
 	$Nowhere.hide()
 	var next = randi()%len(dimensions)
 	current_minigame = dimensions[next].instance()
@@ -32,12 +37,14 @@ func load_minigame():
 	current_minigame.connect("PROGRESS", $HUD, "update_progress")
 	$CurrentMicroGame.add_child(current_minigame)
 		
-	start_countdown()
+	start_countdown(form)
 
-func start_countdown():
-	var next = randi()%len(forms)
-
-	current_minigame.set_wizard_form(forms[next])
+func start_countdown(form):
+	match form:
+		'hen':
+			current_minigame.set_wizard_form(hen_form)
+		'ostrich':
+			current_minigame.set_wizard_form(ostrich_form)
 	$HUD.start_countdown('fly')
 	
 func start_minigame():

@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Wizard/Wizard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Wizard/Ostrich.gd" type="Script" id=2]
+[ext_resource path="res://Wizard/Sprites/ostrich.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+} ]
 
 [node name="Ostrich" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
@@ -10,3 +19,6 @@ wind_resistance = 0
 max_vel_y = 500
 ground_speed_x = 500
 
+[node name="Sprite" parent="." index="0"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 1 )
