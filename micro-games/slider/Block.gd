@@ -1,4 +1,9 @@
+tool
 extends "res://Common/Collider.gd"
 
+export (int) var i = 0
+export (int) var j = 0
+
 func _ready():
-	pass # Replace with function body.
+	position.x = (i+0.5)*42
+	position.y = (j+0.5)*42

@@ -3,8 +3,9 @@ extends Control
 # micro games
 var flappy = load("res://micro-games/flappy/Flappy.tscn")
 var runner = load("res://micro-games/runner/Runner.tscn")
+var slider = load("res://micro-games/slider/Slider.tscn")
 
-var dimensions = [flappy, runner]
+var dimensions = [flappy, runner, slider]
 
 var current_minigame
 # CONTROLLER

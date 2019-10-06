@@ -2,10 +2,19 @@ extends "res://micro-games/dimension.gd"
 
 var sliding = false
 
+var colliding_offset_y = 0
+var cell_size = 42
+onready var padding_x = $Blocks.position.x
+onready var padding_y = $Blocks.position.y
+
 func _ready():
-	$Wizard.connect("action_done", self, "wizard_action")
 	for block in $Blocks.get_children():
 		block.connect('collision_detected', self, '_on_wizard_collide')
+	$Top.connect('collision_detected', self, '_on_wizard_collide')
+	$Left.connect('collision_detected', self, '_on_wizard_collide')
+	$Bottom.connect('collision_detected', self, '_on_wizard_collide')
+	$Right.connect('collision_detected', self, '_on_wizard_collide')
+	check_debug()
 
 # 56 i = 0
 # 36 j = 0
@@ -15,20 +24,31 @@ func wizard_action(action):
 	if sliding or action=='action': return
 	
 	if action == 'left':
-		$Wizard.mov.x = -480
+		wizard.mov.x = -480
 	if action == 'right':
-		$Wizard.mov.x = 480
+		wizard.mov.x = 480
 	if action == 'up':
-		$Wizard.mov.y = -480
+		wizard.mov.y = -480
 	if action == 'down':
-		$Wizard.mov.y = 480
-	print('mov', $Wizard.mov)
+		wizard.mov.y = 480
 	sliding = true
+
+func fix_position():
+	wizard.global_position.x = int(1+(wizard.global_position.x-padding_x)/cell_size)*cell_size+padding_x-cell_size/2
+	wizard.global_position.y = int(1+(wizard.global_position.y-padding_y)/cell_size)*cell_size+padding_y-cell_size/2 - colliding_offset_y
+
 
 func _on_wizard_collide(element_type):
 	._on_wizard_collide(element_type)
 
 	if element_type=='block':
 		sliding = false
-		$Wizard.global_position.x = int(1+($Wizard.global_position.x-32)/48)*48+32-24
-		$Wizard.global_position.y = int(1+($Wizard.global_position.y-12)/48)*48+12-24
+		fix_position()
+	elif element_type == 'border':
+		self.die()
+
+func set_wizard_form(form):
+	.set_wizard_form(form)
+	wizard.set_scale(Vector2(0.6, 0.6))
+	wizard.get_node('CollisionShape2D').position.y += colliding_offset_y
+	fix_position()

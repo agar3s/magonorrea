@@ -1,9 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://micro-games/slider/Slider.gd" type="Script" id=1]
 [ext_resource path="res://micro-games/slider/Assets/grid.png" type="Texture" id=2]
 [ext_resource path="res://micro-games/slider/Block.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Wizard/Wizard.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Common/Collider.gd" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 441, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 252 )
 
 [node name="Slider" type="Node2D"]
 script = ExtResource( 1 )
@@ -11,76 +18,189 @@ __meta__ = {
 "_edit_horizontal_guides_": [ 12.5337, 588.852 ],
 "_edit_vertical_guides_": [ 32.7476, 992.206 ]
 }
-wizard_starting_pos = Vector2( 200, 228 )
+wizard_starting_pos = Vector2( 279, 258 )
 
 [node name="grid" type="Sprite" parent="."]
-visible = false
-position = Vector2( 512, 300 )
+position = Vector2( 69, 48 )
 texture = ExtResource( 2 )
+centered = false
 
 [node name="Blocks" type="Node2D" parent="."]
-editor/display_folded = true
+position = Vector2( 69, 48 )
 
 [node name="Block" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 56, 276 )
+position = Vector2( 273, 21 )
+i = 6
 
 [node name="Block2" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 104, 132 )
+position = Vector2( 777, 21 )
+i = 18
 
 [node name="Block3" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 200, 84 )
+position = Vector2( 105, 63 )
+i = 2
+j = 1
 
 [node name="Block4" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 200, 516 )
+position = Vector2( 399, 63 )
+i = 9
+j = 1
 
 [node name="Block5" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 248, 372 )
+position = Vector2( 693, 63 )
+i = 16
+j = 1
 
 [node name="Block6" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 296, 564 )
+position = Vector2( 861, 63 )
+i = 20
+j = 1
 
 [node name="Block7" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 344, 420 )
+position = Vector2( 525, 105 )
+i = 12
+j = 2
 
 [node name="Block8" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 344, 228 )
+position = Vector2( 231, 147 )
+i = 5
+j = 3
 
 [node name="Block9" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 440, 420 )
+position = Vector2( 483, 189 )
+i = 11
+j = 4
 
 [node name="Block10" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 488, 180 )
+position = Vector2( 147, 231 )
+i = 3
+j = 5
 
 [node name="Block11" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 536, 516 )
+position = Vector2( 357, 231 )
+i = 8
+j = 5
 
 [node name="Block12" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 584, 564 )
+position = Vector2( 609, 231 )
+i = 14
+j = 5
 
 [node name="Block13" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 632, 516 )
+position = Vector2( 63, 273 )
+i = 1
+j = 6
 
 [node name="Block14" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 680, 468 )
+position = Vector2( 819, 273 )
+i = 19
+j = 6
 
 [node name="Block15" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 728, 420 )
+position = Vector2( 735, 315 )
+i = 17
+j = 7
 
 [node name="Block16" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 56, 228 )
+position = Vector2( 567, 357 )
+i = 13
+j = 8
 
 [node name="Block17" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 824, 324 )
+position = Vector2( 231, 399 )
+i = 5
+j = 9
 
 [node name="Block18" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 872, 276 )
+position = Vector2( 693, 399 )
+i = 16
+j = 9
 
 [node name="Block19" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 920, 36 )
+position = Vector2( 777, 399 )
+i = 18
+j = 9
 
 [node name="Block20" parent="Blocks" instance=ExtResource( 3 )]
-position = Vector2( 968, 180 )
+position = Vector2( 21, 441 )
+j = 10
 
-[node name="Wizard" parent="." instance=ExtResource( 4 )]
-position = Vector2( 200, 228 )
-collision_width = 20
+[node name="Block21" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 147, 441 )
+i = 3
+j = 10
+
+[node name="Block22" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 315, 441 )
+i = 7
+j = 10
+
+[node name="Block23" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 861, 441 )
+i = 20
+j = 10
+
+[node name="Block24" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 105, 483 )
+i = 2
+j = 11
+
+[node name="Block25" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 189, 483 )
+i = 4
+j = 11
+
+[node name="Block26" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 441, 483 )
+i = 10
+j = 11
+
+[node name="Talisman" parent="Blocks" instance=ExtResource( 4 )]
+position = Vector2( 567, 231 )
+scale = Vector2( 0.6, 0.6 )
+type = "talisman"
+debug_movable = false
+
+[node name="Top" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( 510, 20 )
+script = ExtResource( 5 )
+type = "border"
+
+[node name="Area2D" type="Area2D" parent="Top"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top/Area2D"]
+shape = SubResource( 1 )
+
+[node name="Left" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( 40, 300 )
+script = ExtResource( 5 )
+type = "border"
+
+[node name="Area2D" type="Area2D" parent="Left"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left/Area2D"]
+shape = SubResource( 2 )
+
+[node name="Right" type="Node2D" parent="."]
+position = Vector2( 980, 300 )
+script = ExtResource( 5 )
+type = "border"
+
+[node name="Area2D" type="Area2D" parent="Right"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Right/Area2D"]
+shape = SubResource( 2 )
+
+[node name="Bottom" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( 510, 580 )
+script = ExtResource( 5 )
+type = "border"
+
+[node name="Area2D" type="Area2D" parent="Bottom"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bottom/Area2D"]
+shape = SubResource( 1 )
+

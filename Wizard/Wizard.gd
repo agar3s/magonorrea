@@ -42,9 +42,11 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_released("ui_left"):
 		emit_signal("action_done", "left")
+		$Sprite.flip_h = true
 	
 	if Input.is_action_just_released("ui_right"):
 		emit_signal("action_done", "right")
+		$Sprite.flip_h = false
 		
 	if Input.is_action_just_released("ui_up"):
 		emit_signal("action_done", "up")
