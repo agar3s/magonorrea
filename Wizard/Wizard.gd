@@ -37,21 +37,21 @@ func _physics_process(delta):
 	if dead or in_nowhere: return
 	self.mov = move_and_slide(self.mov)
 
-	if Input.is_action_just_released("ui_action"):
+	if Input.is_action_just_pressed("ui_action"):
 		emit_signal("action_done", "action")
 	
-	if Input.is_action_just_released("ui_left"):
+	if Input.is_action_just_pressed("ui_left"):
 		emit_signal("action_done", "left")
 		$Sprite.flip_h = true
 	
-	if Input.is_action_just_released("ui_right"):
+	if Input.is_action_just_pressed("ui_right"):
 		emit_signal("action_done", "right")
 		$Sprite.flip_h = false
 		
-	if Input.is_action_just_released("ui_up"):
+	if Input.is_action_just_pressed("ui_up"):
 		emit_signal("action_done", "up")
 	
-	if Input.is_action_just_released("ui_down"):
+	if Input.is_action_just_pressed("ui_down"):
 		emit_signal("action_done", "down")
 
 func fly():

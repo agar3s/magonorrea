@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://micro-games/runner/Runner.gd" type="Script" id=1]
 [ext_resource path="res://micro-games/runner/Sprites/bg.png" type="Texture" id=2]
@@ -21,26 +21,9 @@
 [ext_resource path="res://micro-games/runner/Sprites/space.sprites/g17.tres" type="Texture" id=19]
 [ext_resource path="res://micro-games/runner/Sprites/saturn.png" type="Texture" id=20]
 [ext_resource path="res://micro-games/runner/Sprites/caturro.png" type="Texture" id=21]
-[ext_resource path="res://micro-games/runner/Pine.tscn" type="PackedScene" id=22]
-[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=23]
-[ext_resource path="res://Common/Collider.gd" type="Script" id=24]
-
-[sub_resource type="Animation" id=1]
-resource_name = "Rotate"
-length = 30.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Planet:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 30 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ 0.0, -360.0 ]
-}
+[ext_resource path="res://Common/Collider.gd" type="Script" id=22]
+[ext_resource path="res://micro-games/runner/Pine.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=24]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -52,7 +35,7 @@ animations = [ {
 
 [sub_resource type="Animation" id=3]
 resource_name = "Move"
-length = 15.0
+length = 30.0
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
@@ -60,14 +43,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 15 ),
+"times": PoolRealArray( 0, 30 ),
 "transitions": PoolRealArray( 0.5, 1 ),
 "update": 0,
 "values": [ Vector2( -320, 540 ), Vector2( 1400, -90 ) ]
 }
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 510, 10 )
+extents = Vector2( 100, 10 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 50, 10 )
@@ -81,22 +64,18 @@ __meta__ = {
 wizard_starting_pos = Vector2( 512, 359 )
 debug_wizard_form = "Ostrich"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Rotate = SubResource( 1 )
-
 [node name="Background" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 centered = false
 
 [node name="Space" type="AnimatedSprite" parent="."]
-position = Vector2( 512, 190 )
+position = Vector2( 427, 190 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 2 )
 animation = "travel"
 
 [node name="Saturn" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( -320, 540 )
+position = Vector2( 1299.41, -53.1547 )
 texture = ExtResource( 20 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Saturn"]
@@ -104,7 +83,6 @@ autoplay = "Move"
 anims/Move = SubResource( 3 )
 
 [node name="Planet" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 512, 750 )
 
 [node name="Background" type="Sprite" parent="Planet"]
@@ -113,24 +91,9 @@ texture = ExtResource( 21 )
 [node name="Obstacles" type="Node2D" parent="Planet"]
 position = Vector2( -512, -750 )
 
-[node name="Pine" parent="Planet/Obstacles" instance=ExtResource( 22 )]
-position = Vector2( 930, 690 )
-rotation = 1.57079
-
-[node name="Pine2" parent="Planet/Obstacles" instance=ExtResource( 22 )]
-position = Vector2( 450, 1150 )
-rotation = 3.40339
-
-[node name="Pine3" parent="Planet/Obstacles" instance=ExtResource( 22 )]
-position = Vector2( 840, 1020 )
-rotation = 2.35619
-
-[node name="Talisman" parent="Planet/Obstacles" instance=ExtResource( 23 )]
-position = Vector2( 60, 820 )
-
 [node name="Floor" type="Node2D" parent="."]
 position = Vector2( 510, 370 )
-script = ExtResource( 24 )
+script = ExtResource( 22 )
 type = "floor"
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Floor"]
@@ -140,7 +103,78 @@ editor/display_folded = true
 shape = SubResource( 4 )
 
 [node name="Area2D" type="Area2D" parent="Floor"]
-editor/display_folded = true
+position = Vector2( 0, -11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Area2D"]
 shape = SubResource( 5 )
+
+[node name="Level" type="Node2D" parent="."]
+position = Vector2( 0, 700 )
+
+[node name="Pine" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 300, 0 )
+
+[node name="Pine2" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 1100, 0 )
+
+[node name="Pine3" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 1300, 0 )
+
+[node name="Pine4" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 1940, 0 )
+
+[node name="Pine5" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 2800, 0 )
+
+[node name="Pine6" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 2900, 0 )
+
+[node name="Pine7" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 3000, 0 )
+
+[node name="Pine8" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 3800, 0 )
+
+[node name="Pine9" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 4350, 0 )
+
+[node name="Pine10" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 4900, 0 )
+
+[node name="Pine11" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 5700, 0 )
+
+[node name="Pine12" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 6500, 0 )
+
+[node name="Pine15" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 7100, 0 )
+
+[node name="Pine13" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 7200, 0 )
+
+[node name="Pine16" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 6600, 0 )
+
+[node name="Pine14" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 7300, 0 )
+
+[node name="Pine17" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 6700, 0 )
+
+[node name="Pine18" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 7900, 0 )
+
+[node name="Pine19" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 8100, 0 )
+
+[node name="Pine20" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 8300, 0 )
+
+[node name="Pine21" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 9300, 0 )
+
+[node name="Talisman" parent="Level" instance=ExtResource( 24 )]
+position = Vector2( 10000, -25.306 )
+debug_movable = false
+

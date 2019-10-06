@@ -143,11 +143,14 @@ animations = [ {
 [node name="Ostrich" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 fly_x = 400
-wind_resistance = 0
-max_vel_y = 500
-ground_speed_x = 500
+fly_y = 150
+wind_resistance = 20
+max_vel_y = 600
+jump_speed_y = -550
+ground_speed_x = 400
 
 [node name="Sprite" parent="." index="0"]
 position = Vector2( 0, -10 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 1 )
+
