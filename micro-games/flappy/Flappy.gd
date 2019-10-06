@@ -15,6 +15,9 @@ func _ready():
 	for c in $ChickensContainer.get_children():
 		c.play("Spin")
 	roast()
+	
+	# play musica
+	$MX_Kitchen.play()
 
 func _process(delta):
 	if paused: return

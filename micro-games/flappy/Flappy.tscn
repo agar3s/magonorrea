@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://micro-games/flappy/Flappy.gd" type="Script" id=1]
 [ext_resource path="res://micro-games/flappy/Sprites/chickens.sprites/p1.tres" type="Texture" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://Common/Collider.gd" type="Script" id=26]
 [ext_resource path="res://micro-games/flappy/Fork.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Audio/Assets/MX_Kitchen.ogg" type="AudioStream" id=29]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -210,3 +211,7 @@ rotation = 4.71238
 
 [node name="Talisman" parent="Forks" instance=ExtResource( 28 )]
 position = Vector2( 6860, 300 )
+
+[node name="MX_Kitchen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 29 )
+
