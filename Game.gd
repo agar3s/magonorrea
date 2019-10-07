@@ -1,5 +1,7 @@
 extends Control
 
+export (bool) var debug_skip_poop = false
+
 # micro games
 var flappy = load("res://micro-games/flappy/Flappy.tscn")
 var runner = load("res://micro-games/runner/Runner.tscn")
@@ -19,6 +21,9 @@ func _ready():
 	# conectar escuchadores de señales
 	$Nowhere.connect("ENTER_DIMENSION", self, 'load_minigame')
 	$HUD.connect('COUNTDOWN_OVER', self, 'start_minigame')
+	
+	if debug_skip_poop:
+		$Nowhere.first_time_here = false
 
 	load_portal()
 

@@ -2,7 +2,6 @@ extends "res://Wizard/Wizard.gd"
 
 func _ready():
 	$Sprite.connect("animation_finished", self, "_on_animation_finished")
-	$Ostrich_Fly.play()
 
 func fly():
 	.fly()

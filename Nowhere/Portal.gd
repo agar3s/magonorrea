@@ -18,7 +18,7 @@ func setup(spawn_point):
 	var shuffled_array = shuffle_childs($OriginPoints.get_children())
 	for idx in range(potions.size()):
 		var p = potions[idx]
-		p.rect_global_position = shuffled_array[idx].global_position
+		p.rect_global_position = shuffled_array[idx].global_position - (Vector2.ONE * 64)
 	self.open_portal()
 
 func open_portal():
@@ -38,7 +38,7 @@ func spit_potions():
 			p,
 			"rect_global_position",
 			p.rect_global_position,
-			targets[index].global_position,
+			targets[index].global_position - (Vector2.ONE * 64),
 			0.8,
 			Tween.TRANS_ELASTIC,
 			Tween.EASE_OUT
