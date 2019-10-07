@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Nowhere/Nowhere.gd" type="Script" id=1]
 [ext_resource path="res://Nowhere/Portal.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Audio/Assets/BG_Nowhere.ogg" type="AudioStream" id=8]
 [ext_resource path="res://Audio/Assets/SFX_Potion_Pick.ogg" type="AudioStream" id=9]
 [ext_resource path="res://Nowhere/Asterisk.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Nowhere/Sprites/amuleto.png" type="Texture" id=11]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 2
@@ -31,6 +32,7 @@ color = Color( 1, 0.976471, 0.976471, 1 )
 [node name="Portal" parent="." instance=ExtResource( 2 )]
 
 [node name="Potions" type="Node2D" parent="."]
+editor/display_folded = true
 z_index = 1
 
 [node name="Hen" type="TextureButton" parent="Potions" groups=[
@@ -128,3 +130,15 @@ volume_db = -4.0
 [node name="Asterisk" parent="." instance=ExtResource( 10 )]
 position = Vector2( 650, 110 )
 
+[node name="TalismanContainer" type="Node2D" parent="."]
+position = Vector2( 512, 300 )
+
+[node name="Talisman" type="Sprite" parent="TalismanContainer"]
+editor/display_folded = true
+position = Vector2( 168, 88.8 )
+texture = ExtResource( 11 )
+hframes = 4
+
+[node name="Float" parent="TalismanContainer/Talisman" instance=ExtResource( 4 )]
+
+[node name="Float" parent="TalismanContainer" instance=ExtResource( 4 )]

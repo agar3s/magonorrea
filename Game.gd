@@ -69,7 +69,11 @@ func _on_win():
 	$Tween.stop(self)
 	Loader.remove_current_dimension()
 	disconnect_minigame()
+	
+	# mostrar retroalimentación visual
 	$HUD.show_win()
+	$Nowhere.heal_talisman()
+
 	yield(get_tree().create_timer(3), "timeout")
 	load_portal()
 

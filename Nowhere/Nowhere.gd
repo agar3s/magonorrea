@@ -12,9 +12,11 @@ var form_choosed = false
 var first_time_here = true
 var wizard_rotation = 0
 var wizard_floating = null
+var found_pieces = 0
 
 func _ready():
 	$Asterisk.hide()
+	$TalismanContainer.hide()
 	
 	for potion in $Potions.get_children():
 		potion.connect("pressed", self, "choose_potion", [potion.name])
@@ -86,7 +88,16 @@ func put_wizard():
 	naked_wizard.z_index = 0
 	naked_wizard.get_node("Float").start_floating(wizard_floating)
 
+	$TalismanContainer.show()
+	$TalismanContainer/Float.start_floating()
+	$TalismanContainer/Talisman/Float.start_floating()
+
 func set_defaults():
 	form_choosed = false
 	for idx in range(starting_positions.size()):
 		$Potions.get_child(idx).rect_global_position = starting_positions[idx]
+
+func heal_talisman():
+	found_pieces += 1
+	if found_pieces < 3:
+		$TalismanContainer/Talisman.set_frame(found_pieces)
