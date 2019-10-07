@@ -3,6 +3,7 @@ extends Node
 # las formas del mago
 var hen_form = load("res://Wizard/Hen.tscn")
 var ostrich_form = load("res://Wizard/Ostrich.tscn")
+var penguin_form = load("res://Wizard/Penguin.tscn")
 var wizard_form = load("res://Wizard/Wizard.tscn")
 
 # las dimensiones del universo
@@ -19,6 +20,8 @@ func get_form(form_name):
 			return hen_form
 		'ostrich':
 			return ostrich_form
+		'penguin':
+			return penguin_form
 		'normal':
 			return wizard_form
 

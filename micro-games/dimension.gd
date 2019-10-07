@@ -10,7 +10,7 @@ var level_velocity_x = 0
 
 export (bool) var debug_can_die = true
 export (Vector2) var wizard_starting_pos = Vector2(260, 90)
-export (String, "", "Hen", "Ostrich") var debug_wizard_form = ""
+export (String, "", "Hen", "Ostrich", "Penguin") var debug_wizard_form = ""
 
 var paused = true
 var total_distance = 0

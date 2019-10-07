@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/Pinguino_Run.tpsheet-6a73a367bde9a9a2e093697a5abd627f.res"
+
+[deps]
+
+files=[ "res://Wizard/Sprites/Pinguino_Run.sprites/final-060.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-061.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-062.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-063.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-064.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-065.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-066.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-067.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-068.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-069.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-070.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-071.tres" ]
+
+source_file="res://Wizard/Sprites/Pinguino_Run.tpsheet"
+dest_files=[ "res://.import/Pinguino_Run.tpsheet-6a73a367bde9a9a2e093697a5abd627f.res", "res://Wizard/Sprites/Pinguino_Run.sprites/final-060.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-061.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-062.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-063.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-064.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-065.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-066.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-067.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-068.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-069.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-070.tres", "res://Wizard/Sprites/Pinguino_Run.sprites/final-071.tres" ]
+
+[params]
+

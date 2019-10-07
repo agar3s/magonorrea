@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/Pinguino_Idle.tpsheet-e396baed305b1383b42b60c4fa28c2b1.res"
+
+[deps]
+
+files=[ "res://Wizard/Sprites/Pinguino_Idle.sprites/final-010.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-030.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-011.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-012.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-013.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-014.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-015.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-016.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-017.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-018.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-019.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-020.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-021.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-022.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-023.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-024.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-025.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-026.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-027.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-028.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-029.tres" ]
+
+source_file="res://Wizard/Sprites/Pinguino_Idle.tpsheet"
+dest_files=[ "res://.import/Pinguino_Idle.tpsheet-e396baed305b1383b42b60c4fa28c2b1.res", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-010.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-030.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-011.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-012.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-013.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-014.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-015.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-016.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-017.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-018.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-019.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-020.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-021.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-022.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-023.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-024.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-025.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-026.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-027.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-028.tres", "res://Wizard/Sprites/Pinguino_Idle.sprites/final-029.tres" ]
+
+[params]
+

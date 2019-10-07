@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/Pinguino_Fly.tpsheet-13340d3170182bca310906616ae539fe.res"
+
+[deps]
+
+files=[ "res://Wizard/Sprites/Pinguino_Fly.sprites/final-040.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-041.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-051.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-042.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-050.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-043.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-049.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-044.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-048.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-045.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-047.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-046.tres" ]
+
+source_file="res://Wizard/Sprites/Pinguino_Fly.tpsheet"
+dest_files=[ "res://.import/Pinguino_Fly.tpsheet-13340d3170182bca310906616ae539fe.res", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-040.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-041.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-051.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-042.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-050.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-043.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-049.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-044.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-048.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-045.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-047.tres", "res://Wizard/Sprites/Pinguino_Fly.sprites/final-046.tres" ]
+
+[params]
+

@@ -44,7 +44,7 @@ func spit_potions():
 			Tween.EASE_OUT
 		)
 		$Tween.start()
-		yield($Tween, "tween_completed")
+		yield(get_tree().create_timer(0.3), "timeout")
 	emit_signal("potions_spited")
 
 func close_portal():

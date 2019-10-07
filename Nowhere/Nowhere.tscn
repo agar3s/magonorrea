@@ -1,14 +1,15 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Nowhere/Nowhere.gd" type="Script" id=1]
 [ext_resource path="res://Nowhere/Portal.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Nowhere/Sprites/pocion_gallina.png" type="Texture" id=3]
 [ext_resource path="res://Common/Float.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Nowhere/Sprites/pocion_avestruz.png" type="Texture" id=5]
-[ext_resource path="res://Nowhere/PortalSpawn.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Audio/Assets/BG_Nowhere.ogg" type="AudioStream" id=7]
-[ext_resource path="res://Audio/Assets/SFX_Potion_Pick.ogg" type="AudioStream" id=8]
-[ext_resource path="res://Nowhere/Asterisk.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Nowhere/Sprites/pocion_pinguino.png" type="Texture" id=6]
+[ext_resource path="res://Nowhere/PortalSpawn.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Audio/Assets/BG_Nowhere.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Audio/Assets/SFX_Potion_Pick.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Nowhere/Asterisk.tscn" type="PackedScene" id=10]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 2
@@ -30,7 +31,6 @@ color = Color( 1, 0.976471, 0.976471, 1 )
 [node name="Portal" parent="." instance=ExtResource( 2 )]
 
 [node name="Potions" type="Node2D" parent="."]
-editor/display_folded = true
 z_index = 1
 
 [node name="Hen" type="TextureButton" parent="Potions" groups=[
@@ -71,42 +71,59 @@ texture_normal = ExtResource( 5 )
 
 [node name="Float" parent="Potions/Ostrich" instance=ExtResource( 4 )]
 
+[node name="Penguin" type="TextureButton" parent="Potions" groups=[
+"controls",
+]]
+editor/display_folded = true
+light_mask = 2
+material = SubResource( 1 )
+margin_left = -80.0
+margin_top = 280.0
+margin_right = 48.0
+margin_bottom = 408.0
+rect_scale = Vector2( 0.7, 0.7 )
+rect_pivot_offset = Vector2( 64, 64 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 6 )
+
+[node name="Float" parent="Potions/Penguin" instance=ExtResource( 4 )]
+
 [node name="SpawnPoints" type="Node2D" parent="."]
 editor/display_folded = true
 
-[node name="A" parent="SpawnPoints" instance=ExtResource( 6 )]
+[node name="A" parent="SpawnPoints" instance=ExtResource( 7 )]
 position = Vector2( 860, 98.4 )
 rotation = -2.35619
 
-[node name="B" parent="SpawnPoints" instance=ExtResource( 6 )]
+[node name="B" parent="SpawnPoints" instance=ExtResource( 7 )]
 position = Vector2( 900, 300 )
 rotation = -1.57079
 
-[node name="C" parent="SpawnPoints" instance=ExtResource( 6 )]
+[node name="C" parent="SpawnPoints" instance=ExtResource( 7 )]
 position = Vector2( 370, 470 )
 
-[node name="D" parent="SpawnPoints" instance=ExtResource( 6 )]
+[node name="D" parent="SpawnPoints" instance=ExtResource( 7 )]
 position = Vector2( 120, 370 )
 rotation = 1.57079
 
-[node name="E" parent="SpawnPoints" instance=ExtResource( 6 )]
+[node name="E" parent="SpawnPoints" instance=ExtResource( 7 )]
 position = Vector2( 205.5, 80 )
 rotation = 2.61799
 
-[node name="F" parent="SpawnPoints" instance=ExtResource( 6 )]
+[node name="F" parent="SpawnPoints" instance=ExtResource( 7 )]
 position = Vector2( 650, 470 )
 rotation = 0.785397
 
-[node name="G" parent="SpawnPoints" instance=ExtResource( 6 )]
+[node name="G" parent="SpawnPoints" instance=ExtResource( 7 )]
 position = Vector2( 510, 50 )
 rotation = 3.14159
 
 [node name="BG_Nowhere" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
+stream = ExtResource( 8 )
 
 [node name="Potion_Pick" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 9 )
 volume_db = -4.0
 
-[node name="Asterisk" parent="." instance=ExtResource( 9 )]
+[node name="Asterisk" parent="." instance=ExtResource( 10 )]
 position = Vector2( 650, 110 )

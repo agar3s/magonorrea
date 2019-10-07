@@ -83,3 +83,7 @@ func run():
 
 func idle(on_ground = true):
 	pass
+
+func slide(direction = ""):
+	self.run()
+	yield(get_tree().create_timer(0.1), "timeout")

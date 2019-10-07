@@ -4,6 +4,10 @@ func _ready():
 	$Sprite.play("Fly")
 	$Sprite.connect("animation_finished", self, "_on_animation_finished")
 
+func _on_animation_finished():
+	if $Sprite.animation == "Explode":
+		$Sprite.play("Fly")
+
 func fly():
 	.fly()
 	$Sprite.play("Explode")
@@ -19,6 +23,5 @@ func die():
 		$Die.playsound()
 	.die()
 
-func _on_animation_finished():
-	if $Sprite.animation == "Explode":
-		$Sprite.play("Fly")
+func idle(on_ground = true):
+	$Sprite.play("Fly")

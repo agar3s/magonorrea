@@ -26,6 +26,7 @@ texture = ExtResource( 2 )
 centered = false
 
 [node name="Blocks" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 69, 48 )
 
 [node name="Block" parent="Blocks" instance=ExtResource( 3 )]
