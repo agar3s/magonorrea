@@ -21,6 +21,8 @@ export (int) var max_vel_y = 400
 export (int) var jump_speed_y = -300
 # que tan rapido corre
 export (int) var ground_speed_x = 350
+# slidding speed
+export (int) var slide_speed_x = 80
 # └----------------------------------------------------------------------------┘
 
 var mov = Vector2()

@@ -55,4 +55,4 @@ func slide(direction = ""):
 	elif direction == 'down':
 		$Sprite.rotation_degrees = 90
 	$Sprite.play("Slide")
-	yield(get_tree().create_timer(0.5), "timeout")
+	yield(get_tree().create_timer(0.3), "timeout")

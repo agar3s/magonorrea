@@ -67,7 +67,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 510.0 ]
 }
 wizard_starting_pos = Vector2( 512, 359 )
-debug_wizard_form = "Ostrich"
+debug_wizard_form = "Penguin"
 verb = "run"
 
 [node name="Background" type="Sprite" parent="."]

@@ -26,13 +26,13 @@ func wizard_action(action):
 	
 	yield(wizard.slide(action), "completed")
 	if action == 'left':
-		wizard.mov.x = -480
+		wizard.mov.x = -wizard.slide_speed_x
 	if action == 'right':
-		wizard.mov.x = 480
+		wizard.mov.x = wizard.slide_speed_x
 	if action == 'up':
-		wizard.mov.y = -480
+		wizard.mov.y = -wizard.slide_speed_x
 	if action == 'down':
-		wizard.mov.y = 480
+		wizard.mov.y = wizard.slide_speed_x
 
 	sliding = true
 

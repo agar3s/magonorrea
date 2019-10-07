@@ -19,6 +19,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 32.7476, 992.206 ]
 }
 wizard_starting_pos = Vector2( 279, 258 )
+debug_wizard_form = "Penguin"
 verb = "slide"
 
 [node name="grid" type="Sprite" parent="."]
@@ -32,10 +33,12 @@ position = Vector2( 69, 48 )
 [node name="Block" parent="Blocks" instance=ExtResource( 3 )]
 position = Vector2( 273, 21 )
 i = 6
+j = 0
 
 [node name="Block2" parent="Blocks" instance=ExtResource( 3 )]
 position = Vector2( 777, 21 )
 i = 18
+j = 0
 
 [node name="Block3" parent="Blocks" instance=ExtResource( 3 )]
 position = Vector2( 105, 63 )
@@ -124,6 +127,7 @@ j = 9
 
 [node name="Block20" parent="Blocks" instance=ExtResource( 3 )]
 position = Vector2( 21, 441 )
+i = 0
 j = 10
 
 [node name="Block21" parent="Blocks" instance=ExtResource( 3 )]
