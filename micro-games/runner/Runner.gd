@@ -73,7 +73,6 @@ func _on_wizard_collide(element_type):
 	if element_type=='pine':
 		self.die()
 	elif element_type=='floor':
-		print('on floor')
 		wizard_on_ground = true
 		if first_time_on_ground:
 			first_time_on_ground = false

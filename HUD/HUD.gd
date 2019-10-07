@@ -11,6 +11,9 @@ func show_win():
 func show_die():
 	$Container/Message.text = 'DIE!!'
 
+func show_end():
+	$Container/Message.text = 'Your talisman is back'
+
 func start_countdown(message):
 	$Container/Message.text = '3'
 	yield(get_tree().create_timer(0.6), "timeout")
@@ -29,3 +32,7 @@ func update_progress(progress):
 func clean():
 	$Container/Message.text = ''
 	$Container/Progress.text = ''
+	$Container/Time.text = ''
+
+func update_timer(value):
+	$Container/Time.set_text("%ds" % value)

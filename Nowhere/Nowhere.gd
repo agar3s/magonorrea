@@ -34,17 +34,9 @@ func start():
 		return
 
 	# poner valores por defecto
-	form_choosed = false
-	for idx in range(starting_positions.size()):
-		$Potions.get_child(idx).rect_global_position = starting_positions[idx]
+	set_defaults()
 
-	naked_wizard = wizard.instance()
-	naked_wizard.position = Vector2(512, 300)
-	naked_wizard.rotation_degrees = wizard_rotation
-	naked_wizard.in_nowhere = true
-	add_child(naked_wizard)
-	naked_wizard.z_index = 0
-	naked_wizard.get_node("Float").start_floating(wizard_floating)
+	self.put_wizard()
 
 	yield(get_tree().create_timer(3.0), "timeout")
 	
@@ -78,3 +70,23 @@ func _on_wizard_pooped():
 	wizard_floating = "cw"
 	$Asterisk.queue_free()
 	self.start()
+
+func end():
+	$BG_Nowhere.play()
+
+	set_defaults()
+	put_wizard()
+
+func put_wizard():
+	naked_wizard = wizard.instance()
+	naked_wizard.position = Vector2(512, 300)
+	naked_wizard.rotation_degrees = wizard_rotation
+	naked_wizard.in_nowhere = true
+	add_child(naked_wizard)
+	naked_wizard.z_index = 0
+	naked_wizard.get_node("Float").start_floating(wizard_floating)
+
+func set_defaults():
+	form_choosed = false
+	for idx in range(starting_positions.size()):
+		$Potions.get_child(idx).rect_global_position = starting_positions[idx]

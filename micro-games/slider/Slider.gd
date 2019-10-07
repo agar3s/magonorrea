@@ -1,9 +1,11 @@
 extends "res://micro-games/dimension.gd"
 
-var sliding = false
+export(int) var duration = 30
 
+var sliding = false
 var colliding_offset_y = 0
 var cell_size = 42
+
 onready var padding_x = $Blocks.position.x
 onready var padding_y = $Blocks.position.y
 
@@ -20,7 +22,6 @@ func _ready():
 # 36 j = 0
 
 func wizard_action(action):
-	print('action =', action)
 	if sliding or action=='action': return
 	
 	if action == 'left':
@@ -56,3 +57,6 @@ func set_wizard_form(form):
 	wizard.get_node('CollisionShape2D').position.y += colliding_offset_y
 	wizard.idle()
 	fix_position()
+
+func start():
+	emit_signal("TIMER", duration)

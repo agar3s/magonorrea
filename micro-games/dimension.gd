@@ -3,6 +3,7 @@ extends Node2D
 signal DIE
 signal WIN
 signal PROGRESS
+signal TIMER(duration)
 
 const GRAVITY = 980
 var level_velocity_x = 0
