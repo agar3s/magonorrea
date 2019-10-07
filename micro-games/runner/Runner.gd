@@ -52,9 +52,13 @@ func update_planet_rotation(delta):
 	# remove passed elements
 	if $Planet/Obstacles.get_child_count() > 0:
 		var obstacle = $Planet/Obstacles.get_child(0)
+		var is_talisman = obstacle.type == 'talisman'
 		if obstacle.global_position.y >= 800:
 			$Planet/Obstacles.remove_child(obstacle)
 			obstacle.queue_free()
+			if is_talisman:
+				self.die()
+		
 
 func check_attach_planet():
 	var obstacle = $Level.get_child(0)
@@ -71,6 +75,7 @@ func check_attach_planet():
 
 func _on_wizard_collide(element_type):
 	._on_wizard_collide(element_type)
+	
 	if element_type=='pine':
 		self.die()
 	elif element_type == 'space':

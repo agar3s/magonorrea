@@ -16,7 +16,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 20, 60 )
+extents = Vector2( 20, 50 )
 
 [node name="Pine" type="Node2D"]
 script = ExtResource( 1 )
@@ -29,7 +29,7 @@ animation = "slap"
 frame = 2
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2( -4, -24 )
+position = Vector2( -9, -24 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 2 )

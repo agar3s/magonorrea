@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://micro-games/slider/Slider.gd" type="Script" id=1]
-[ext_resource path="res://micro-games/slider/Assets/grid.png" type="Texture" id=2]
+[ext_resource path="res://micro-games/slider/Assets/slider_bg.png" type="Texture" id=2]
 [ext_resource path="res://micro-games/slider/Block.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Common/Collider.gd" type="Script" id=5]
@@ -22,7 +22,6 @@ wizard_starting_pos = Vector2( 279, 258 )
 duration = 15
 
 [node name="grid" type="Sprite" parent="."]
-position = Vector2( 69, 48 )
 texture = ExtResource( 2 )
 centered = false
 
