@@ -117,7 +117,7 @@ position = Vector2( 0, -11 )
 shape = SubResource( 4 )
 
 [node name="OuterSpace" type="Node2D" parent="."]
-position = Vector2( 510, 30 )
+position = Vector2( 510, 50 )
 script = ExtResource( 22 )
 __meta__ = {
 "_edit_group_": true
@@ -130,6 +130,7 @@ type = "space"
 shape = SubResource( 5 )
 
 [node name="Level" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 0, 700 )
 
 [node name="Pine" parent="Level" instance=ExtResource( 23 )]
