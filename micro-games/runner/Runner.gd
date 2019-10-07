@@ -14,6 +14,8 @@ func _ready():
 	
 	$MX_Runner.play()
 	
+	$BG_Planeta.play()
+	
 	for obstacle in $Level.get_children():
 		pass # should order in X?
 	

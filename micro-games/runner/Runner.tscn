@@ -25,6 +25,7 @@
 [ext_resource path="res://micro-games/runner/Pine.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Audio/Assets/MX_Runner.ogg" type="AudioStream" id=25]
+[ext_resource path="res://Audio/Assets/BG_Planet.ogg" type="AudioStream" id=26]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -187,3 +188,5 @@ debug_movable = false
 stream = ExtResource( 25 )
 volume_db = -2.0
 
+[node name="BG_Planeta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 26 )

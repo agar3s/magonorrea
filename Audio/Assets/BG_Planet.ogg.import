@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/BG_Planet.ogg-89269011ba82049575144c5d1fb87d5d.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/BG_Planet.ogg"
+dest_files=[ "res://.import/BG_Planet.ogg-89269011ba82049575144c5d1fb87d5d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
