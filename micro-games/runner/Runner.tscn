@@ -68,6 +68,7 @@ __meta__ = {
 }
 wizard_starting_pos = Vector2( 512, 359 )
 debug_wizard_form = "Ostrich"
+verb = "run"
 
 [node name="Background" type="Sprite" parent="."]
 texture = ExtResource( 2 )

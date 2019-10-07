@@ -53,7 +53,7 @@ func load_minigame(form):
 
 func start_countdown(form):
 	current_minigame.set_wizard_form(Loader.get_form(form))
-	$HUD.start_countdown('fly')
+	$HUD.start_countdown(current_minigame.verb)
 	
 func start_minigame():
 	current_minigame.paused = false
@@ -73,10 +73,10 @@ func _on_win():
 	yield(get_tree().create_timer(3), "timeout")
 	load_portal()
 
-func _on_die():
+func _on_die(reason):
 	$Tween.stop(self)
 	disconnect_minigame()
-	$HUD.show_die()
+	$HUD.show_die(reason)
 	yield(get_tree().create_timer(3), "timeout")
 	load_portal()
 
@@ -97,7 +97,7 @@ func start_timer(duration = 10):
 
 func update_timer(val):
 	if int(val) == 0:
-		current_minigame.die()
+		current_minigame.die("TIME'S UP!")
 	$HUD.update_timer(val)
 
 func _on_tween_completed(_obj, _key):

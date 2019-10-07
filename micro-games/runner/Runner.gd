@@ -23,6 +23,13 @@ func _ready():
 	# verificar si hay que cargar algo pa' debug
 	check_debug()
 
+func wizard_action(action):
+	.wizard_action(action)
+	
+	if !action.empty():
+		make_fly()
+	
+
 func make_fly():
 	if paused: return
 	if wizard_on_ground:
@@ -57,7 +64,7 @@ func update_planet_rotation(delta):
 			$Planet/Obstacles.remove_child(obstacle)
 			obstacle.queue_free()
 			if is_talisman:
-				self.die()
+				self.die('FRAGMENT LOST')
 		
 
 func check_attach_planet():
@@ -77,9 +84,9 @@ func _on_wizard_collide(element_type):
 	._on_wizard_collide(element_type)
 	
 	if element_type=='pine':
-		self.die()
+		self.die('Scratched!')
 	elif element_type == 'space':
-		self.die()
+		self.die('Out of space!')
 	elif element_type=='floor':
 		wizard_on_ground = true
 		if first_time_on_ground:
@@ -93,7 +100,8 @@ func set_wizard_form(form):
 	.set_wizard_form(form)
 	wizard.idle()
 	rotation_speed = planet_perimeter/wizard.ground_speed_x
-	total_distance = $Level/Talisman.global_position.x
+	total_distance = $Level/Talisman.global_position.x + 650
+	
 
 func start():
 	wizard.run()

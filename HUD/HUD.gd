@@ -6,10 +6,10 @@ func _ready():
 	self.clean()
 
 func show_win():
-	$Container/Message.text = 'WIN!!'
+	$Container/Message.text = 'Fragment recovered!!'
 
-func show_die():
-	$Container/Message.text = 'DIE!!'
+func show_die(reason):
+	$Container/Message.text = reason.capitalize()
 
 func show_end():
 	$Container/Message.text = 'Your talisman is back'
@@ -27,7 +27,8 @@ func start_countdown(message):
 	emit_signal('COUNTDOWN_OVER')
 
 func update_progress(progress):
-	$Container/Progress.text = str(progress)
+	$Container/Progress.text = str(abs(progress)) + '%'
+	$Container/Progress.text.capitalize()
 
 func clean():
 	$Container/Message.text = ''

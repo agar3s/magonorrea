@@ -49,7 +49,7 @@ func _on_wizard_collide(element_type):
 		sliding = false
 		fix_position()
 	elif element_type == 'border':
-		self.die()
+		self.die('Out of the ring!')
 
 func set_wizard_form(form):
 	.set_wizard_form(form)

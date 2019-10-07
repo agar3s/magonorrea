@@ -37,11 +37,18 @@ func _process(delta):
 	if int($Forks.global_position.x) % 10 == 0:
 		emit_signal('PROGRESS', int(-100*($Forks.global_position.x)/total_distance))
 
+func wizard_action(action):
+	.wizard_action(action)
+	
+	if !action.empty():
+		make_fly()
 
 func _on_wizard_collide(element_type):
 	._on_wizard_collide(element_type)
-	if element_type=='fork' || element_type=='ceil' || element_type=='floor':
-		self.die()
+	if element_type=='fork':
+		self.die('Forked!')
+	elif element_type=='ceil' || element_type=='floor':
+		self.die('Roasted!')
 
 
 func set_wizard_form(form):

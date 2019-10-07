@@ -127,3 +127,4 @@ volume_db = -4.0
 
 [node name="Asterisk" parent="." instance=ExtResource( 10 )]
 position = Vector2( 650, 110 )
+

@@ -16,6 +16,8 @@ var paused = true
 var total_distance = 0
 var wizard
 
+export (String) var verb = 'fly'
+
 func make_fly():
 	if paused: return
 	wizard.fly()
@@ -31,11 +33,11 @@ func _on_wizard_collide(element_type):
 func start():
 	pass
 
-func die():
+func die(reason='DEAD!'):
 	if !debug_can_die: return
 	paused = true
 	wizard.die()
-	emit_signal("DIE")
+	emit_signal("DIE", reason)
 
 func win():
 	paused = true

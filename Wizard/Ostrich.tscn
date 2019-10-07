@@ -154,8 +154,8 @@ animations = [ {
 
 [node name="Ostrich" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-fly_x = 400
-fly_y = 150
+fly_x = 350
+fly_y = 200
 wind_resistance = 20
 max_vel_y = 600
 jump_speed_y = -550

@@ -49,3 +49,4 @@ custom_fonts/font = SubResource( 1 )
 text = "0s"
 align = 1
 valign = 1
+
