@@ -19,3 +19,4 @@ debug_skip_poop = true
 [node name="HUD" parent="." instance=ExtResource( 3 )]
 
 [node name="Node2D" type="Node" parent="."]
+

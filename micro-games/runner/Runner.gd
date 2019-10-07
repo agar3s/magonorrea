@@ -9,6 +9,7 @@ var planet_perimeter = 2600
 
 func _ready():
 	$Floor.connect("collision_detected", self, '_on_wizard_collide')
+	$OuterSpace.connect("collision_detected", self, '_on_wizard_collide')
 	
 	$Space.play("travel")
 	
@@ -71,6 +72,8 @@ func check_attach_planet():
 func _on_wizard_collide(element_type):
 	._on_wizard_collide(element_type)
 	if element_type=='pine':
+		self.die()
+	elif element_type == 'space':
 		self.die()
 	elif element_type=='floor':
 		wizard_on_ground = true

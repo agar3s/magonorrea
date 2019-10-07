@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://micro-games/runner/Runner.gd" type="Script" id=1]
 [ext_resource path="res://micro-games/runner/Sprites/bg.png" type="Texture" id=2]
@@ -57,6 +57,9 @@ extents = Vector2( 100, 10 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 50, 10 )
 
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 50, 10 )
+
 [node name="Runner" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
@@ -96,7 +99,6 @@ texture = ExtResource( 21 )
 position = Vector2( -512, -750 )
 
 [node name="Floor" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 510, 370 )
 script = ExtResource( 22 )
 type = "floor"
@@ -113,8 +115,20 @@ position = Vector2( 0, -11 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Area2D"]
 shape = SubResource( 4 )
 
+[node name="OuterSpace" type="Node2D" parent="."]
+position = Vector2( 510, 30 )
+script = ExtResource( 22 )
+__meta__ = {
+"_edit_group_": true
+}
+type = "space"
+
+[node name="Area2D" type="Area2D" parent="OuterSpace"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OuterSpace/Area2D"]
+shape = SubResource( 5 )
+
 [node name="Level" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 0, 700 )
 
 [node name="Pine" parent="Level" instance=ExtResource( 23 )]
@@ -153,20 +167,20 @@ position = Vector2( 5700, 0 )
 [node name="Pine12" parent="Level" instance=ExtResource( 23 )]
 position = Vector2( 6500, 0 )
 
+[node name="Pine16" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 6600, 0 )
+
+[node name="Pine17" parent="Level" instance=ExtResource( 23 )]
+position = Vector2( 6700, 0 )
+
 [node name="Pine15" parent="Level" instance=ExtResource( 23 )]
 position = Vector2( 7100, 0 )
 
 [node name="Pine13" parent="Level" instance=ExtResource( 23 )]
 position = Vector2( 7200, 0 )
 
-[node name="Pine16" parent="Level" instance=ExtResource( 23 )]
-position = Vector2( 6600, 0 )
-
 [node name="Pine14" parent="Level" instance=ExtResource( 23 )]
 position = Vector2( 7300, 0 )
-
-[node name="Pine17" parent="Level" instance=ExtResource( 23 )]
-position = Vector2( 6700, 0 )
 
 [node name="Pine18" parent="Level" instance=ExtResource( 23 )]
 position = Vector2( 7900, 0 )
