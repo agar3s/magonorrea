@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/MX_Ice.ogg-6235e73037716ea6f6ced7e2af27d3fb.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/MX_Ice.ogg"
+dest_files=[ "res://.import/MX_Ice.ogg-6235e73037716ea6f6ced7e2af27d3fb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=2]
+[gd_scene load_steps=150 format=2]
 
 [ext_resource path="res://Nowhere/Portal.gd" type="Script" id=1]
 [ext_resource path="res://Nowhere/Sprites/Portal_Turn.sprites/final-080.tres" type="Texture" id=2]
@@ -141,6 +141,11 @@
 [ext_resource path="res://Nowhere/Sprites/Portal_Born.sprites/final-078.tres" type="Texture" id=139]
 [ext_resource path="res://Nowhere/Sprites/Portal_Born.sprites/final-079.tres" type="Texture" id=140]
 [ext_resource path="res://Nowhere/Sprites/potions_mask.png" type="Texture" id=141]
+[ext_resource path="res://Audio/Assets/SFX_Portal_Open.ogg" type="AudioStream" id=142]
+[ext_resource path="res://Audio/Assets/SFX_Portal.ogg" type="AudioStream" id=143]
+[ext_resource path="res://Audio/Scripts/RandomTool.gd" type="Script" id=144]
+[ext_resource path="res://Audio/Assets/SFX_Potion.ogg" type="AudioStream" id=145]
+[ext_resource path="res://Audio/Scripts/SoundObject.gd" type="Script" id=146]
 
 [sub_resource type="Animation" id=1]
 resource_name = "OpenPortal"
@@ -267,3 +272,37 @@ position = Vector2( 18, 120 )
 
 [node name="D" type="Position2D" parent="OriginPoints"]
 position = Vector2( 48, 110 )
+
+[node name="SFX_Open" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 142 )
+bus = "SFX"
+
+[node name="SFX_Loop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 143 )
+bus = "SFX"
+
+[node name="SFX_Spit" type="AudioStreamPlayer" parent="."]
+bus = "SFX"
+script = ExtResource( 144 )
+Volume = -3.0
+RandomVolume = true
+minVolume = -2.0
+maxVolume = 1.0
+minPitch = -2.0
+maxPitch = 2.0
+
+[node name="SFX_Spit2" type="AudioStreamPlayer" parent="SFX_Spit"]
+stream = ExtResource( 145 )
+bus = "SFX"
+script = ExtResource( 146 )
+
+[node name="SFX_Spit3" type="AudioStreamPlayer" parent="SFX_Spit"]
+stream = ExtResource( 145 )
+bus = "SFX"
+script = ExtResource( 146 )
+
+[node name="SFX_Spit4" type="AudioStreamPlayer" parent="SFX_Spit"]
+stream = ExtResource( 145 )
+bus = "SFX"
+script = ExtResource( 146 )
+

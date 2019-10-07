@@ -142,3 +142,4 @@ hframes = 4
 [node name="Float" parent="TalismanContainer/Talisman" instance=ExtResource( 4 )]
 
 [node name="Float" parent="TalismanContainer" instance=ExtResource( 4 )]
+

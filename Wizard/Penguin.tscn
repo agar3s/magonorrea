@@ -1,4 +1,4 @@
-[gd_scene load_steps=138 format=2]
+[gd_scene load_steps=152 format=2]
 
 [ext_resource path="res://Wizard/Wizard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Wizard/Penguin.gd" type="Script" id=2]
@@ -53,89 +53,103 @@
 [ext_resource path="res://Wizard/Sprites/Pinguino_Slide.sprites/final-178.tres" type="Texture" id=51]
 [ext_resource path="res://Wizard/Sprites/Pinguino_Slide.sprites/final-179.tres" type="Texture" id=52]
 [ext_resource path="res://Wizard/Sprites/Pinguino_Slide.sprites/final-180.tres" type="Texture" id=53]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-060.tres" type="Texture" id=54]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-061.tres" type="Texture" id=55]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-062.tres" type="Texture" id=56]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-063.tres" type="Texture" id=57]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-064.tres" type="Texture" id=58]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-065.tres" type="Texture" id=59]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-066.tres" type="Texture" id=60]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-067.tres" type="Texture" id=61]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-068.tres" type="Texture" id=62]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-069.tres" type="Texture" id=63]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-070.tres" type="Texture" id=64]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-071.tres" type="Texture" id=65]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-080.tres" type="Texture" id=66]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-081.tres" type="Texture" id=67]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-082.tres" type="Texture" id=68]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-083.tres" type="Texture" id=69]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-084.tres" type="Texture" id=70]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-085.tres" type="Texture" id=71]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-086.tres" type="Texture" id=72]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-087.tres" type="Texture" id=73]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-088.tres" type="Texture" id=74]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-089.tres" type="Texture" id=75]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-090.tres" type="Texture" id=76]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-091.tres" type="Texture" id=77]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-092.tres" type="Texture" id=78]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-093.tres" type="Texture" id=79]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-094.tres" type="Texture" id=80]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-095.tres" type="Texture" id=81]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-096.tres" type="Texture" id=82]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-097.tres" type="Texture" id=83]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-098.tres" type="Texture" id=84]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-099.tres" type="Texture" id=85]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-100.tres" type="Texture" id=86]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-101.tres" type="Texture" id=87]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-102.tres" type="Texture" id=88]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-103.tres" type="Texture" id=89]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-104.tres" type="Texture" id=90]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-105.tres" type="Texture" id=91]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-106.tres" type="Texture" id=92]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-107.tres" type="Texture" id=93]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-108.tres" type="Texture" id=94]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-109.tres" type="Texture" id=95]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-110.tres" type="Texture" id=96]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-111.tres" type="Texture" id=97]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-112.tres" type="Texture" id=98]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-113.tres" type="Texture" id=99]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-114.tres" type="Texture" id=100]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-115.tres" type="Texture" id=101]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-116.tres" type="Texture" id=102]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-117.tres" type="Texture" id=103]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-040.tres" type="Texture" id=104]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-041.tres" type="Texture" id=105]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-042.tres" type="Texture" id=106]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-043.tres" type="Texture" id=107]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-044.tres" type="Texture" id=108]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-045.tres" type="Texture" id=109]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-046.tres" type="Texture" id=110]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-047.tres" type="Texture" id=111]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-048.tres" type="Texture" id=112]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-049.tres" type="Texture" id=113]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-050.tres" type="Texture" id=114]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-051.tres" type="Texture" id=115]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-010.tres" type="Texture" id=116]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-011.tres" type="Texture" id=117]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-012.tres" type="Texture" id=118]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-013.tres" type="Texture" id=119]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-014.tres" type="Texture" id=120]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-015.tres" type="Texture" id=121]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-016.tres" type="Texture" id=122]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-017.tres" type="Texture" id=123]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-018.tres" type="Texture" id=124]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-019.tres" type="Texture" id=125]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-020.tres" type="Texture" id=126]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-021.tres" type="Texture" id=127]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-022.tres" type="Texture" id=128]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-023.tres" type="Texture" id=129]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-024.tres" type="Texture" id=130]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-025.tres" type="Texture" id=131]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-026.tres" type="Texture" id=132]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-027.tres" type="Texture" id=133]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-028.tres" type="Texture" id=134]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-029.tres" type="Texture" id=135]
-[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-030.tres" type="Texture" id=136]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-010.tres" type="Texture" id=54]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-011.tres" type="Texture" id=55]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-012.tres" type="Texture" id=56]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-013.tres" type="Texture" id=57]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-014.tres" type="Texture" id=58]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-015.tres" type="Texture" id=59]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-016.tres" type="Texture" id=60]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-017.tres" type="Texture" id=61]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-018.tres" type="Texture" id=62]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-019.tres" type="Texture" id=63]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-020.tres" type="Texture" id=64]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-021.tres" type="Texture" id=65]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-022.tres" type="Texture" id=66]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-023.tres" type="Texture" id=67]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-024.tres" type="Texture" id=68]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-025.tres" type="Texture" id=69]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-026.tres" type="Texture" id=70]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-027.tres" type="Texture" id=71]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-028.tres" type="Texture" id=72]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-029.tres" type="Texture" id=73]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Idle.sprites/final-030.tres" type="Texture" id=74]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-080.tres" type="Texture" id=75]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-081.tres" type="Texture" id=76]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-082.tres" type="Texture" id=77]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-083.tres" type="Texture" id=78]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-084.tres" type="Texture" id=79]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-085.tres" type="Texture" id=80]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-086.tres" type="Texture" id=81]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-087.tres" type="Texture" id=82]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-088.tres" type="Texture" id=83]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-089.tres" type="Texture" id=84]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-090.tres" type="Texture" id=85]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-091.tres" type="Texture" id=86]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-092.tres" type="Texture" id=87]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-093.tres" type="Texture" id=88]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-094.tres" type="Texture" id=89]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-095.tres" type="Texture" id=90]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-096.tres" type="Texture" id=91]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-097.tres" type="Texture" id=92]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-098.tres" type="Texture" id=93]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-099.tres" type="Texture" id=94]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-100.tres" type="Texture" id=95]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-101.tres" type="Texture" id=96]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-102.tres" type="Texture" id=97]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-103.tres" type="Texture" id=98]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-104.tres" type="Texture" id=99]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-105.tres" type="Texture" id=100]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-106.tres" type="Texture" id=101]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-107.tres" type="Texture" id=102]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-108.tres" type="Texture" id=103]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-109.tres" type="Texture" id=104]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-110.tres" type="Texture" id=105]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-111.tres" type="Texture" id=106]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-112.tres" type="Texture" id=107]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-113.tres" type="Texture" id=108]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-114.tres" type="Texture" id=109]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-115.tres" type="Texture" id=110]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-116.tres" type="Texture" id=111]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Die.sprites/final-117.tres" type="Texture" id=112]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-060.tres" type="Texture" id=113]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-061.tres" type="Texture" id=114]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-062.tres" type="Texture" id=115]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-063.tres" type="Texture" id=116]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-064.tres" type="Texture" id=117]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-065.tres" type="Texture" id=118]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-066.tres" type="Texture" id=119]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-067.tres" type="Texture" id=120]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-068.tres" type="Texture" id=121]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-069.tres" type="Texture" id=122]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-070.tres" type="Texture" id=123]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Run.sprites/final-071.tres" type="Texture" id=124]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-040.tres" type="Texture" id=125]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-041.tres" type="Texture" id=126]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-042.tres" type="Texture" id=127]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-043.tres" type="Texture" id=128]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-044.tres" type="Texture" id=129]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-045.tres" type="Texture" id=130]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-046.tres" type="Texture" id=131]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-047.tres" type="Texture" id=132]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-048.tres" type="Texture" id=133]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-049.tres" type="Texture" id=134]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-050.tres" type="Texture" id=135]
+[ext_resource path="res://Wizard/Sprites/Pinguino_Fly.sprites/final-051.tres" type="Texture" id=136]
+[ext_resource path="res://Audio/Assets/SFX_Pen_Die.ogg" type="AudioStream" id=137]
+[ext_resource path="res://Audio/Assets/SFX_Pen_Walk.ogg" type="AudioStream" id=138]
+[ext_resource path="res://Audio/Assets/SFX_Pen_Fly.ogg" type="AudioStream" id=139]
+[ext_resource path="res://Audio/Scripts/RandomTool.gd" type="Script" id=140]
+[ext_resource path="res://Audio/Assets/SFX_Ost_DoubleJump_01.ogg" type="AudioStream" id=141]
+[ext_resource path="res://Audio/Scripts/SoundObject.gd" type="Script" id=142]
+[ext_resource path="res://Audio/Assets/SFX_Ost_DoubleJump_02.ogg" type="AudioStream" id=143]
+[ext_resource path="res://Audio/Assets/SFX_Pen_Slide.ogg" type="AudioStream" id=144]
+[ext_resource path="res://Audio/Assets/SFX_Pen_Stop.ogg" type="AudioStream" id=145]
+[ext_resource path="res://Audio/Scripts/VO_Jump.gd" type="Script" id=146]
+[ext_resource path="res://Audio/Assets/VO_Pen_Slide_01.ogg" type="AudioStream" id=147]
+[ext_resource path="res://Audio/Assets/VO_Pen_Slide_02.ogg" type="AudioStream" id=148]
+[ext_resource path="res://Audio/Assets/VO_Pen_Jump_01.ogg" type="AudioStream" id=149]
+[ext_resource path="res://Audio/Assets/VO_Pen_Jump_02.ogg" type="AudioStream" id=150]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -144,24 +158,24 @@ animations = [ {
 "name": "Slide",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ) ],
+"frames": [ ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ) ],
 "loop": true,
-"name": "Run",
+"name": "Idle",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ) ],
+"frames": [ ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ) ],
 "loop": false,
 "name": "Die",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ) ],
+"frames": [ ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ) ],
 "loop": true,
-"name": "Fly",
+"name": "Run",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ) ],
+"frames": [ ExtResource( 125 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ) ],
 "loop": true,
-"name": "Idle",
+"name": "Fly",
 "speed": 30.0
 } ]
 
@@ -178,4 +192,61 @@ slide_speed_x = 500
 [node name="Sprite" parent="." index="0"]
 position = Vector2( 0, 0 )
 frames = SubResource( 1 )
+
+[node name="SFX_Pen_Die" type="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource( 137 )
+
+[node name="SFX_Pen_Walk" type="AudioStreamPlayer" parent="." index="4"]
+stream = ExtResource( 138 )
+
+[node name="SFX_Pen_Fly" type="AudioStreamPlayer" parent="." index="5"]
+stream = ExtResource( 139 )
+volume_db = -4.0
+
+[node name="SFX_Pen_Jump" type="AudioStreamPlayer" parent="." index="6"]
+script = ExtResource( 140 )
+Volume = -7.0
+Pitch = 5.0
+
+[node name="SFX_Pen_Jump2" type="AudioStreamPlayer" parent="SFX_Pen_Jump" index="0"]
+stream = ExtResource( 141 )
+script = ExtResource( 142 )
+
+[node name="SFX_Pen_Jump3" type="AudioStreamPlayer" parent="SFX_Pen_Jump" index="1"]
+stream = ExtResource( 143 )
+script = ExtResource( 142 )
+
+[node name="SFX_Pen_Slide" type="AudioStreamPlayer" parent="." index="7"]
+stream = ExtResource( 144 )
+volume_db = -3.0
+
+[node name="SFX_Pen_Stop" type="AudioStreamPlayer" parent="." index="8"]
+stream = ExtResource( 145 )
+volume_db = -4.0
+
+[node name="Vo_Pen_Slide" type="AudioStreamPlayer" parent="." index="9"]
+editor/display_folded = true
+script = ExtResource( 146 )
+weight = 80
+
+[node name="Vo_Pen_Slide2" type="AudioStreamPlayer" parent="Vo_Pen_Slide" index="0"]
+stream = ExtResource( 147 )
+script = ExtResource( 142 )
+
+[node name="Vo_Pen_Slide3" type="AudioStreamPlayer" parent="Vo_Pen_Slide" index="1"]
+stream = ExtResource( 148 )
+script = ExtResource( 142 )
+
+[node name="Vo_Pen_Jump" type="AudioStreamPlayer" parent="." index="10"]
+editor/display_folded = true
+script = ExtResource( 146 )
+weight = 35
+
+[node name="Vo_Pen_Jump2" type="AudioStreamPlayer" parent="Vo_Pen_Jump" index="0"]
+stream = ExtResource( 149 )
+script = ExtResource( 142 )
+
+[node name="Vo_Pen_Jump3" type="AudioStreamPlayer" parent="Vo_Pen_Jump" index="1"]
+stream = ExtResource( 150 )
+script = ExtResource( 142 )
 

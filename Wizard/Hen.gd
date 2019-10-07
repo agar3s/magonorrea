@@ -12,16 +12,32 @@ func fly():
 	.fly()
 	$Sprite.play("Explode")
 	$SFX_Jump.playsound()
+	$Fly.play()
+	$Walk.stop()
 	$VO_Jump.playsound()
 
 func run():
+	$Fly.stop()
+	$Walk.play()
 	$Sprite.play("Run")
+
+func jump():
+	$SFX_Hop.playsound()
+	$Walk.stop()
+	$Fly.stop()
+	$VO_Jump.playsound()
+	.jump()
 
 func die():
 	$Sprite.play("Die")
+	$Walk.stop()
+	$Fly.stop()
 	if dead == false:
 		$Die.playsound()
 	.die()
 
 func idle(on_ground = true):
+	$Walk.stop()
+	$Fly.stop()
+	$Stop.play()
 	$Sprite.play("Fly")

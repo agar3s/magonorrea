@@ -12,7 +12,9 @@ func _ready():
 func _on_interacted():
 	if poposeado: return
 	_poop_step += 1
+	$SFX_Asterisco.playsound()
 	if _poop_step >= 3:
+		$SFX_Asterisco.playsound()
 		$TextureButton.disconnect("pressed", self, "_on_interacted")
 		
 	if _going_back:

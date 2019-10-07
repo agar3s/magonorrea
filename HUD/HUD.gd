@@ -6,15 +6,18 @@ func _ready():
 	self.clean()
 
 func show_win():
+	$SFX_Win.play()
 	$Container/Message.text = 'Fragment recovered!!'
 
 func show_die(reason):
+	$SFX_Die.play()
 	$Container/Message.text = reason.capitalize()
 
 func show_end():
 	$Container/Message.text = 'Your talisman is back'
 
 func start_countdown(message):
+	$SFX_Countdown.play()
 	$Container/Message.text = '3'
 	yield(get_tree().create_timer(0.6), "timeout")
 	$Container/Message.text = '2'
@@ -24,6 +27,12 @@ func start_countdown(message):
 	$Container/Message.text = message
 	yield(get_tree().create_timer(0.3), "timeout")
 	$Container/Message.text = ''
+	if message == 'fly':
+		$SFX_Fly.play()
+	if message == 'run':
+		$SFX_Run.play()
+	if message == 'slide':
+		$SFX_Slide.play()
 	emit_signal('COUNTDOWN_OVER')
 
 func update_progress(progress):

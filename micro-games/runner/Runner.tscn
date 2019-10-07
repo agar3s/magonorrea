@@ -67,7 +67,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 510.0 ]
 }
 wizard_starting_pos = Vector2( 512, 359 )
-debug_wizard_form = "Penguin"
+debug_wizard_form = "Hen"
 verb = "run"
 
 [node name="Background" type="Sprite" parent="."]
@@ -206,6 +206,7 @@ debug_movable = false
 [node name="MX_Runner" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 25 )
 volume_db = -4.0
+bus = "MX"
 
 [node name="BG_Planeta" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 26 )

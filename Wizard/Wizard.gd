@@ -31,12 +31,14 @@ var dead = false
 const FALL_X = 35
 
 func _ready():
+	$Wizard_Idle.play()
 	$CollisionShape2D.shape.radius = collision_width
 	pass
 
 # warning-ignore:unused_argument
 func _physics_process(delta):
 	if dead or in_nowhere: return
+	$Wizard_Idle.stop()
 	self.mov = move_and_slide(self.mov)
 
 	if Input.is_action_just_pressed("ui_action"):
@@ -57,12 +59,14 @@ func _physics_process(delta):
 		emit_signal("action_done", "down")
 
 func fly():
+	#$Wizard_Jump.playsound()
+	$Wizard_Idle.stop()
 	self.mov.y = max(self.mov.y - self.fly_y, -self.max_vel_y)
 
 
 func fall(gravity):
 	if self.dead: return
-
+	$Wizard_Idle.stop()
 	self.mov.y = min(
 		(gravity - self.wind_resistance) * get_physics_process_delta_time() + self.mov.y,
 		self.max_vel_y
@@ -71,6 +75,8 @@ func fall(gravity):
 
 
 func die():
+	$Wizard_Idle.stop()
+	#$Wizard_Die.playsound()
 	self.dead = true
 	$Sprite.rotation_degrees = -180
 
@@ -78,14 +84,19 @@ func win():
 	self.dead = true
 
 func jump():
+	$Wizard_Idle.stop()
+	#$Wizard_Jump.playsound()
 	mov.y = jump_speed_y
 
 func run():
+	$Wizard_Idle.stop()
 	pass
 
 func idle(on_ground = true):
 	pass
 
 func slide(direction = ""):
+	$Wizard_Idle.stop()
+	#$Wizard_Jump.playsound()
 	self.run()
 	yield(get_tree().create_timer(0.1), "timeout")

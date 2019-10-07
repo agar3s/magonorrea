@@ -1,120 +1,125 @@
-[gd_scene load_steps=96 format=2]
+[gd_scene load_steps=101 format=2]
 
 [ext_resource path="res://Wizard/Wizard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Wizard/Hen.gd" type="Script" id=2]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-110.tres" type="Texture" id=3]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-111.tres" type="Texture" id=4]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-112.tres" type="Texture" id=5]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-113.tres" type="Texture" id=6]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-114.tres" type="Texture" id=7]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-115.tres" type="Texture" id=8]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-116.tres" type="Texture" id=9]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-117.tres" type="Texture" id=10]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-118.tres" type="Texture" id=11]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-119.tres" type="Texture" id=12]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-120.tres" type="Texture" id=13]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-121.tres" type="Texture" id=14]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-122.tres" type="Texture" id=15]
-[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-123.tres" type="Texture" id=16]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-060.tres" type="Texture" id=17]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-061.tres" type="Texture" id=18]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-062.tres" type="Texture" id=19]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-063.tres" type="Texture" id=20]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-064.tres" type="Texture" id=21]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-065.tres" type="Texture" id=22]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-066.tres" type="Texture" id=23]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-067.tres" type="Texture" id=24]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-068.tres" type="Texture" id=25]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-069.tres" type="Texture" id=26]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-070.tres" type="Texture" id=27]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-071.tres" type="Texture" id=28]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-072.tres" type="Texture" id=29]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-073.tres" type="Texture" id=30]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-074.tres" type="Texture" id=31]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-075.tres" type="Texture" id=32]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-076.tres" type="Texture" id=33]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-077.tres" type="Texture" id=34]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-078.tres" type="Texture" id=35]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-079.tres" type="Texture" id=36]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-080.tres" type="Texture" id=37]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-081.tres" type="Texture" id=38]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-082.tres" type="Texture" id=39]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-083.tres" type="Texture" id=40]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-084.tres" type="Texture" id=41]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-085.tres" type="Texture" id=42]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-086.tres" type="Texture" id=43]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-087.tres" type="Texture" id=44]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-088.tres" type="Texture" id=45]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-089.tres" type="Texture" id=46]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-090.tres" type="Texture" id=47]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-091.tres" type="Texture" id=48]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-092.tres" type="Texture" id=49]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-093.tres" type="Texture" id=50]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-094.tres" type="Texture" id=51]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-095.tres" type="Texture" id=52]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-096.tres" type="Texture" id=53]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-097.tres" type="Texture" id=54]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-098.tres" type="Texture" id=55]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-099.tres" type="Texture" id=56]
-[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-100.tres" type="Texture" id=57]
-[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-020.tres" type="Texture" id=58]
-[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-021.tres" type="Texture" id=59]
-[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-022.tres" type="Texture" id=60]
-[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-023.tres" type="Texture" id=61]
-[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-024.tres" type="Texture" id=62]
-[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-025.tres" type="Texture" id=63]
-[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-026.tres" type="Texture" id=64]
-[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-027.tres" type="Texture" id=65]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-030.tres" type="Texture" id=66]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-031.tres" type="Texture" id=67]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-032.tres" type="Texture" id=68]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-033.tres" type="Texture" id=69]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-034.tres" type="Texture" id=70]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-035.tres" type="Texture" id=71]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-036.tres" type="Texture" id=72]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-037.tres" type="Texture" id=73]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-038.tres" type="Texture" id=74]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-039.tres" type="Texture" id=75]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-040.tres" type="Texture" id=76]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-041.tres" type="Texture" id=77]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-042.tres" type="Texture" id=78]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-043.tres" type="Texture" id=79]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-044.tres" type="Texture" id=80]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-045.tres" type="Texture" id=81]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-046.tres" type="Texture" id=82]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-047.tres" type="Texture" id=83]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-048.tres" type="Texture" id=84]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-049.tres" type="Texture" id=85]
-[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-050.tres" type="Texture" id=86]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-030.tres" type="Texture" id=3]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-031.tres" type="Texture" id=4]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-032.tres" type="Texture" id=5]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-033.tres" type="Texture" id=6]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-034.tres" type="Texture" id=7]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-035.tres" type="Texture" id=8]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-036.tres" type="Texture" id=9]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-037.tres" type="Texture" id=10]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-038.tres" type="Texture" id=11]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-039.tres" type="Texture" id=12]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-040.tres" type="Texture" id=13]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-041.tres" type="Texture" id=14]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-042.tres" type="Texture" id=15]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-043.tres" type="Texture" id=16]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-044.tres" type="Texture" id=17]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-045.tres" type="Texture" id=18]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-046.tres" type="Texture" id=19]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-047.tres" type="Texture" id=20]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-048.tres" type="Texture" id=21]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-049.tres" type="Texture" id=22]
+[ext_resource path="res://Wizard/Sprites/Pollo_Explode.sprites/final-050.tres" type="Texture" id=23]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-060.tres" type="Texture" id=24]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-061.tres" type="Texture" id=25]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-062.tres" type="Texture" id=26]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-063.tres" type="Texture" id=27]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-064.tres" type="Texture" id=28]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-065.tres" type="Texture" id=29]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-066.tres" type="Texture" id=30]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-067.tres" type="Texture" id=31]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-068.tres" type="Texture" id=32]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-069.tres" type="Texture" id=33]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-070.tres" type="Texture" id=34]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-071.tres" type="Texture" id=35]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-072.tres" type="Texture" id=36]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-073.tres" type="Texture" id=37]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-074.tres" type="Texture" id=38]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-075.tres" type="Texture" id=39]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-076.tres" type="Texture" id=40]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-077.tres" type="Texture" id=41]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-078.tres" type="Texture" id=42]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-079.tres" type="Texture" id=43]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-080.tres" type="Texture" id=44]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-081.tres" type="Texture" id=45]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-082.tres" type="Texture" id=46]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-083.tres" type="Texture" id=47]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-084.tres" type="Texture" id=48]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-085.tres" type="Texture" id=49]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-086.tres" type="Texture" id=50]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-087.tres" type="Texture" id=51]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-088.tres" type="Texture" id=52]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-089.tres" type="Texture" id=53]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-090.tres" type="Texture" id=54]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-091.tres" type="Texture" id=55]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-092.tres" type="Texture" id=56]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-093.tres" type="Texture" id=57]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-094.tres" type="Texture" id=58]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-095.tres" type="Texture" id=59]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-096.tres" type="Texture" id=60]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-097.tres" type="Texture" id=61]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-098.tres" type="Texture" id=62]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-099.tres" type="Texture" id=63]
+[ext_resource path="res://Wizard/Sprites/Pollo_Die.sprites/final-100.tres" type="Texture" id=64]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-110.tres" type="Texture" id=65]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-111.tres" type="Texture" id=66]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-112.tres" type="Texture" id=67]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-113.tres" type="Texture" id=68]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-114.tres" type="Texture" id=69]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-115.tres" type="Texture" id=70]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-116.tres" type="Texture" id=71]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-117.tres" type="Texture" id=72]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-118.tres" type="Texture" id=73]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-119.tres" type="Texture" id=74]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-120.tres" type="Texture" id=75]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-121.tres" type="Texture" id=76]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-122.tres" type="Texture" id=77]
+[ext_resource path="res://Wizard/Sprites/Pollo_Run.sprites/final-123.tres" type="Texture" id=78]
+[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-020.tres" type="Texture" id=79]
+[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-021.tres" type="Texture" id=80]
+[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-022.tres" type="Texture" id=81]
+[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-023.tres" type="Texture" id=82]
+[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-024.tres" type="Texture" id=83]
+[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-025.tres" type="Texture" id=84]
+[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-026.tres" type="Texture" id=85]
+[ext_resource path="res://Wizard/Sprites/Pollo_Fly.sprites/final-027.tres" type="Texture" id=86]
 [ext_resource path="res://Audio/Scripts/RandomTool.gd" type="Script" id=87]
 [ext_resource path="res://Audio/Assets/SFX_Hen_Jump_01.ogg" type="AudioStream" id=88]
 [ext_resource path="res://Audio/Scripts/SoundObject.gd" type="Script" id=89]
 [ext_resource path="res://Audio/Assets/SFX_Hen_Jump_02.ogg" type="AudioStream" id=90]
-[ext_resource path="res://Audio/Scripts/VO_Jump.gd" type="Script" id=91]
-[ext_resource path="res://Audio/Assets/VO_Hen_Jump_01.ogg" type="AudioStream" id=92]
-[ext_resource path="res://Audio/Assets/VO_Hen_Jump_02.ogg" type="AudioStream" id=93]
-[ext_resource path="res://Audio/Assets/SFX_Hen_Die.ogg" type="AudioStream" id=94]
+[ext_resource path="res://Audio/Assets/SFX_Hen_Hop_01.ogg" type="AudioStream" id=91]
+[ext_resource path="res://Audio/Assets/SFX_Hen_Hop_02.ogg" type="AudioStream" id=92]
+[ext_resource path="res://Audio/Scripts/VO_Jump.gd" type="Script" id=93]
+[ext_resource path="res://Audio/Assets/VO_Hen_Jump_01.ogg" type="AudioStream" id=94]
+[ext_resource path="res://Audio/Assets/VO_Hen_Jump_02.ogg" type="AudioStream" id=95]
+[ext_resource path="res://Audio/Assets/SFX_Hen_Die.ogg" type="AudioStream" id=96]
+[ext_resource path="res://Audio/Assets/SFX_Hen_Fly.ogg" type="AudioStream" id=97]
+[ext_resource path="res://Audio/Assets/SFX_Hen_Walk.ogg" type="AudioStream" id=98]
+[ext_resource path="res://Audio/Assets/SFX_Hen_Stop.ogg" type="AudioStream" id=99]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
-"loop": true,
-"name": "Run",
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
+"loop": false,
+"name": "Explode",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ],
+"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ) ],
 "loop": false,
 "name": "Die",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ) ],
+"frames": [ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ) ],
 "loop": true,
-"name": "Fly",
+"name": "Run",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ) ],
-"loop": false,
-"name": "Explode",
+"frames": [ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ) ],
+"loop": true,
+"name": "Fly",
 "speed": 30.0
 } ]
 
@@ -153,10 +158,33 @@ bus = "SFX"
 script = ExtResource( 89 )
 Bus = "SFX"
 
-[node name="VO_Jump" type="AudioStreamPlayer" parent="." index="3"]
+[node name="SFX_Hop" type="AudioStreamPlayer" parent="." index="3"]
+bus = "SFX"
+script = ExtResource( 87 )
+Volume = -16.0
+Bus = "SFX"
+RandomVolume = true
+minVolume = -2.0
+RandomPitch = true
+minPitch = -4.0
+maxPitch = 4.0
+
+[node name="SFX_Jump_01" type="AudioStreamPlayer" parent="SFX_Hop" index="0"]
+stream = ExtResource( 91 )
+bus = "SFX"
+script = ExtResource( 89 )
+Bus = "SFX"
+
+[node name="SFX_Jump_02" type="AudioStreamPlayer" parent="SFX_Hop" index="1"]
+stream = ExtResource( 92 )
+bus = "SFX"
+script = ExtResource( 89 )
+Bus = "SFX"
+
+[node name="VO_Jump" type="AudioStreamPlayer" parent="." index="4"]
 editor/display_folded = true
 bus = "SFX"
-script = ExtResource( 91 )
+script = ExtResource( 93 )
 Volume = -7.0
 RandomVolume = true
 minVolume = -3.0
@@ -167,19 +195,37 @@ maxPitch = 4.0
 weight = 35
 
 [node name="VO_Jump_01" type="AudioStreamPlayer" parent="VO_Jump" index="0"]
-stream = ExtResource( 92 )
+stream = ExtResource( 94 )
 bus = "SFX"
 script = ExtResource( 89 )
 Bus = "SFX"
 
 [node name="VO_Jump_02" type="AudioStreamPlayer" parent="VO_Jump" index="1"]
-stream = ExtResource( 93 )
+stream = ExtResource( 95 )
 bus = "SFX"
 script = ExtResource( 89 )
 Bus = "SFX"
 
-[node name="Die" type="AudioStreamPlayer" parent="." index="4"]
-stream = ExtResource( 94 )
+[node name="Die" type="AudioStreamPlayer" parent="." index="5"]
+stream = ExtResource( 96 )
+bus = "SFX"
+script = ExtResource( 89 )
+Bus = "SFX"
+
+[node name="Fly" type="AudioStreamPlayer" parent="." index="6"]
+stream = ExtResource( 97 )
+bus = "SFX"
+script = ExtResource( 89 )
+Bus = "SFX"
+
+[node name="Walk" type="AudioStreamPlayer" parent="." index="7"]
+stream = ExtResource( 98 )
+bus = "SFX"
+script = ExtResource( 89 )
+Bus = "SFX"
+
+[node name="Stop" type="AudioStreamPlayer" parent="." index="8"]
+stream = ExtResource( 99 )
 bus = "SFX"
 script = ExtResource( 89 )
 Bus = "SFX"

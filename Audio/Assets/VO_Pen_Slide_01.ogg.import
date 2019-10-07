@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/VO_Pen_Slide_01.ogg-1c7dd3aa647f36c0c63bdf03348ffb30.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/VO_Pen_Slide_01.ogg"
+dest_files=[ "res://.import/VO_Pen_Slide_01.ogg-1c7dd3aa647f36c0c63bdf03348ffb30.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

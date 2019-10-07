@@ -25,6 +25,7 @@ func open_portal():
 	# estas dos líneas aseguran que no se verá el portal antes de abrirse
 	$Sprite.play("Born")
 	$Sprite.stop()
+	$SFX_Open.play()
 
 	$AnimationPlayer.play("OpenPortal", -1, 3.0)
 	yield($AnimationPlayer, "animation_finished")
@@ -32,6 +33,7 @@ func open_portal():
 	# se abre el portal
 	$Sprite.play("Born")
 	yield($Sprite, "animation_finished")
+	$SFX_Loop.play()
 	
 	# empieza a girar el portal
 	$Sprite.play("Turn")
@@ -44,6 +46,7 @@ func spit_potions():
 	var targets = shuffle_childs($TargetPoints.get_children())
 	for index in range(pots.size()):
 		$AnimationPlayer.play("SpitPotions")
+		$SFX_Spit.playsound()
 		var p = pots[index]
 
 		p.get_node("Float").start_floating()
@@ -64,6 +67,7 @@ func close_portal():
 	$AnimationPlayer.play_backwards("OpenPortal")
 	yield($AnimationPlayer, "animation_finished")
 	$Sprite.stop()
+	$SFX_Loop.stop()
 
 func shuffle_childs(source):
 	var copy = source.duplicate()

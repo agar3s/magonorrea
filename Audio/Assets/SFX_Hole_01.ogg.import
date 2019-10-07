@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Hole_01.ogg-31a7e9e40c6776e54e86178faeffb37e.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/SFX_Hole_01.ogg"
+dest_files=[ "res://.import/SFX_Hole_01.ogg-31a7e9e40c6776e54e86178faeffb37e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

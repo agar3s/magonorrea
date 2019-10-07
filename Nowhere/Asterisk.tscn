@@ -1,9 +1,14 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Nowhere/Sprites/asterisk.png" type="Texture" id=1]
 [ext_resource path="res://Nowhere/Asterisk.gd" type="Script" id=2]
 [ext_resource path="res://Wizard/Sprites/wizard.png" type="Texture" id=3]
 [ext_resource path="res://Nowhere/Sprites/asterisk_mask.png" type="Texture" id=4]
+[ext_resource path="res://Audio/Scripts/RandomTool.gd" type="Script" id=5]
+[ext_resource path="res://Audio/Assets/SFX_Hole_01.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Audio/Scripts/SoundObject.gd" type="Script" id=7]
+[ext_resource path="res://Audio/Assets/SFX_Hole_02.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Audio/Assets/SFX_Hole_03.ogg" type="AudioStream" id=9]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 2
@@ -245,3 +250,29 @@ anims/Poop1 = SubResource( 2 )
 anims/Poop2 = SubResource( 3 )
 anims/Poop3 = SubResource( 4 )
 anims/Relax = SubResource( 5 )
+
+[node name="SFX_Asterisco" type="AudioStreamPlayer" parent="."]
+bus = "SFX"
+script = ExtResource( 5 )
+Volume = 3.0
+Pitch = -2.0
+Bus = "SFX"
+
+[node name="Asterisco1" type="AudioStreamPlayer" parent="SFX_Asterisco"]
+stream = ExtResource( 6 )
+bus = "SFX"
+script = ExtResource( 7 )
+Bus = "SFX"
+
+[node name="Asterisco2" type="AudioStreamPlayer" parent="SFX_Asterisco"]
+stream = ExtResource( 8 )
+bus = "SFX"
+script = ExtResource( 7 )
+Bus = "SFX"
+
+[node name="Asterisco3" type="AudioStreamPlayer" parent="SFX_Asterisco"]
+stream = ExtResource( 9 )
+bus = "SFX"
+script = ExtResource( 7 )
+Bus = "SFX"
+

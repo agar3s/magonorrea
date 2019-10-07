@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://micro-games/slider/Slider.gd" type="Script" id=1]
 [ext_resource path="res://micro-games/slider/Assets/slider_bg.png" type="Texture" id=2]
 [ext_resource path="res://micro-games/slider/Block.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Common/Collider.gd" type="Script" id=5]
+[ext_resource path="res://Audio/Assets/MX_Ice.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Audio/Assets/BG_Ice.ogg" type="AudioStream" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 441, 10 )
@@ -19,7 +21,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 32.7476, 992.206 ]
 }
 wizard_starting_pos = Vector2( 279, 258 )
-debug_wizard_form = "Penguin"
+debug_wizard_form = "Hen"
 verb = "slide"
 
 [node name="grid" type="Sprite" parent="."]
@@ -208,4 +210,12 @@ type = "border"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bottom/Area2D"]
 shape = SubResource( 1 )
+
+[node name="Mx_Ice" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "MX"
+
+[node name="BG_Ice" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -8.0
 

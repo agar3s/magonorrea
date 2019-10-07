@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Pen_Stop.ogg-3b01562d4cf133986004cbef654b5fca.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/SFX_Pen_Stop.ogg"
+dest_files=[ "res://.import/SFX_Pen_Stop.ogg-3b01562d4cf133986004cbef654b5fca.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

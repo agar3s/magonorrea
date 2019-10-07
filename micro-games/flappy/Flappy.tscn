@@ -103,7 +103,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 512.0 ]
 }
 wizard_starting_pos = Vector2( 260, 180 )
-debug_wizard_form = "Penguin"
+debug_wizard_form = "Ostrich"
 
 [node name="Tween" type="Tween" parent="."]
 
@@ -329,6 +329,7 @@ animation = "Burn"
 frame = 5
 
 [node name="Forks" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Fork" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 1000, 540 )
@@ -435,6 +436,7 @@ position = Vector2( 6860, 300 )
 
 [node name="MX_Kitchen" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 67 )
+bus = "MX"
 
 [node name="BG_Kitchen" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 68 )

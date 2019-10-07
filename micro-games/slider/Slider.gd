@@ -10,6 +10,8 @@ onready var padding_x = $Blocks.position.x
 onready var padding_y = $Blocks.position.y
 
 func _ready():
+	$Mx_Ice.play()
+	$BG_Ice.play()
 	for block in $Blocks.get_children():
 		block.connect('collision_detected', self, '_on_wizard_collide')
 	$Top.connect('collision_detected', self, '_on_wizard_collide')

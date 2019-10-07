@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Potion.ogg-d38d17a63da799a70aa1a9a804693cb4.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/SFX_Potion.ogg"
+dest_files=[ "res://.import/SFX_Potion.ogg-d38d17a63da799a70aa1a9a804693cb4.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

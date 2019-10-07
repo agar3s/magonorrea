@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Hole_02.ogg-a4ade456c7984422517eb512fa71071b.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/SFX_Hole_02.ogg"
+dest_files=[ "res://.import/SFX_Hole_02.ogg-a4ade456c7984422517eb512fa71071b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

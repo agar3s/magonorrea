@@ -33,9 +33,12 @@ func _on_animation_finished():
 		$Sprite.play("Fly")
 
 func idle(on_ground = true):
+	
 	if on_ground:
+		$Ostrich_Stop.play()
 		$Sprite.play("Idle")
 		$Ostrich_Fly.stop()
 		$Ostrich_Walk.stop()
 	else:
 		$Sprite.play("Fly")
+		$Ostrich_Fly.play()
