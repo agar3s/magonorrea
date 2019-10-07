@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://micro-games/runner/Runner.gd" type="Script" id=1]
 [ext_resource path="res://micro-games/runner/Sprites/bg.png" type="Texture" id=2]
@@ -24,8 +24,9 @@
 [ext_resource path="res://Common/Collider.gd" type="Script" id=22]
 [ext_resource path="res://micro-games/runner/Pine.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Audio/Assets/MX_Runner.ogg" type="AudioStream" id=25]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
@@ -33,7 +34,7 @@ animations = [ {
 "speed": 16.0
 } ]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "Move"
 length = 30.0
 tracks/0/type = "value"
@@ -49,10 +50,10 @@ tracks/0/keys = {
 "values": [ Vector2( -320, 540 ), Vector2( 1400, -90 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 100, 10 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 50, 10 )
 
 [node name="Runner" type="Node2D"]
@@ -71,18 +72,20 @@ centered = false
 [node name="Space" type="AnimatedSprite" parent="."]
 position = Vector2( 427, 190 )
 scale = Vector2( 2, 2 )
-frames = SubResource( 2 )
+frames = SubResource( 1 )
 animation = "travel"
 
 [node name="Saturn" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 1299.41, -53.1547 )
 texture = ExtResource( 20 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Saturn"]
 autoplay = "Move"
-anims/Move = SubResource( 3 )
+anims/Move = SubResource( 2 )
 
 [node name="Planet" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 512, 750 )
 
 [node name="Background" type="Sprite" parent="Planet"]
@@ -92,6 +95,7 @@ texture = ExtResource( 21 )
 position = Vector2( -512, -750 )
 
 [node name="Floor" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 510, 370 )
 script = ExtResource( 22 )
 type = "floor"
@@ -100,15 +104,16 @@ type = "floor"
 editor/display_folded = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor/StaticBody2D2"]
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Area2D" type="Area2D" parent="Floor"]
 position = Vector2( 0, -11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Area2D"]
-shape = SubResource( 5 )
+shape = SubResource( 4 )
 
 [node name="Level" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 0, 700 )
 
 [node name="Pine" parent="Level" instance=ExtResource( 23 )]
@@ -177,4 +182,8 @@ position = Vector2( 9300, 0 )
 [node name="Talisman" parent="Level" instance=ExtResource( 24 )]
 position = Vector2( 10000, -25.306 )
 debug_movable = false
+
+[node name="MX_Runner" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 25 )
+volume_db = -2.0
 
