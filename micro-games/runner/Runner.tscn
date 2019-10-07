@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://micro-games/runner/Runner.gd" type="Script" id=1]
 [ext_resource path="res://micro-games/runner/Sprites/bg.png" type="Texture" id=2]
@@ -186,7 +186,9 @@ debug_movable = false
 
 [node name="MX_Runner" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 25 )
-volume_db = -2.0
+volume_db = -4.0
 
 [node name="BG_Planeta" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 26 )
+volume_db = -3.0
+

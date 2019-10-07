@@ -20,6 +20,7 @@ func _ready():
 	$BG_Nowhere.play()
 
 func start():
+	$BG_Nowhere.play()
 	# poner valores por defecto
 	form_choosed = false
 	for idx in range(starting_positions.size()):

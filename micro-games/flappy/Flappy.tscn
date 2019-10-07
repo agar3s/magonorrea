@@ -437,5 +437,6 @@ stream = ExtResource( 67 )
 
 [node name="BG_Kitchen" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 68 )
-volume_db = -2.0
+volume_db = -8.0
 bus = "SFX"
+
