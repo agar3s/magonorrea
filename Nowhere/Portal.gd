@@ -22,8 +22,21 @@ func setup(spawn_point):
 	self.open_portal()
 
 func open_portal():
-	$AnimationPlayer.play("OpenPortal", -1, 2.0)
+	# estas dos líneas aseguran que no se verá el portal antes de abrirse
+	$Sprite.play("Born")
+	$Sprite.stop()
+
+	$AnimationPlayer.play("OpenPortal", -1, 3.0)
 	yield($AnimationPlayer, "animation_finished")
+	
+	# se abre el portal
+	$Sprite.play("Born")
+	yield($Sprite, "animation_finished")
+	
+	# empieza a girar el portal
+	$Sprite.play("Turn")
+	yield($Sprite, "animation_finished")
+
 	self.spit_potions()
 
 func spit_potions():
@@ -50,6 +63,7 @@ func spit_potions():
 func close_portal():
 	$AnimationPlayer.play_backwards("OpenPortal")
 	yield($AnimationPlayer, "animation_finished")
+	$Sprite.stop()
 
 func shuffle_childs(source):
 	var copy = source.duplicate()
