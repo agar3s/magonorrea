@@ -85,19 +85,18 @@ position = Vector2( 2, -150 )
 texture = ExtResource( 3 )
 
 [node name="TargetPoints" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="A" type="Position2D" parent="TargetPoints"]
-position = Vector2( -70, -170 )
+position = Vector2( -70, -160 )
 
 [node name="B" type="Position2D" parent="TargetPoints"]
-position = Vector2( -7.35, -230 )
+position = Vector2( -7.35, -220 )
 
 [node name="C" type="Position2D" parent="TargetPoints"]
-position = Vector2( 10, -110 )
+position = Vector2( 10, -100 )
 
 [node name="D" type="Position2D" parent="TargetPoints"]
-position = Vector2( 60, -180 )
+position = Vector2( 60, -170 )
 
 [node name="OriginPoints" type="Node2D" parent="."]
 editor/display_folded = true

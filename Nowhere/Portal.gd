@@ -1,5 +1,7 @@
 extends Node2D
 
+signal potions_spited
+
 var potions
 
 func _ready():
@@ -30,6 +32,8 @@ func spit_potions():
 	for index in range(pots.size()):
 		$AnimationPlayer.play("SpitPotions")
 		var p = pots[index]
+
+		p.get_node("Float").start_floating()
 		$Tween.interpolate_property(
 			p,
 			"rect_global_position",
@@ -41,9 +45,11 @@ func spit_potions():
 		)
 		$Tween.start()
 		yield($Tween, "tween_completed")
+	emit_signal("potions_spited")
 
 func close_portal():
 	$AnimationPlayer.play_backwards("OpenPortal")
+	yield($AnimationPlayer, "animation_finished")
 
 func shuffle_childs(source):
 	var copy = source.duplicate()
