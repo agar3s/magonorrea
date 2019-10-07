@@ -45,6 +45,7 @@ func _on_wizard_collide(element_type):
 
 func set_wizard_form(form):
 	.set_wizard_form(form)
+	wizard.idle(false)
 	level_velocity_x = wizard.fly_x
 	total_distance = $Forks/Talisman.position.x - wizard.position.x - wizard.collision_width
 

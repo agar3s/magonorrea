@@ -8,11 +8,15 @@ func _ready():
 func initialize(potions_ref):
 	potions = potions_ref
 
-func setup():
+func setup(spawn_point):
+	self.global_position = spawn_point.global_position
+	self.rotation_degrees = spawn_point.rotation_degrees
+
 	# poner las posiones en su lugar de origen
+	var shuffled_array = shuffle_childs($OriginPoints.get_children())
 	for idx in range(potions.size()):
 		var p = potions[idx]
-		p.rect_global_position = $OriginPoints.get_child(idx).global_position
+		p.rect_global_position = shuffled_array[idx].global_position
 	self.open_portal()
 
 func open_portal():
@@ -21,14 +25,16 @@ func open_portal():
 	self.spit_potions()
 
 func spit_potions():
-	for index in range(potions.size()):
+	var pots = shuffle_childs(potions)
+	var targets = shuffle_childs($TargetPoints.get_children())
+	for index in range(pots.size()):
 		$AnimationPlayer.play("SpitPotions")
-		var p = potions[index]
+		var p = pots[index]
 		$Tween.interpolate_property(
 			p,
 			"rect_global_position",
 			p.rect_global_position,
-			$TargetPoints.get_child(index).global_position,
+			targets[index].global_position,
 			0.8,
 			Tween.TRANS_ELASTIC,
 			Tween.EASE_OUT
@@ -38,3 +44,8 @@ func spit_potions():
 
 func close_portal():
 	$AnimationPlayer.play_backwards("OpenPortal")
+
+func shuffle_childs(source):
+	var copy = source.duplicate()
+	copy.shuffle()
+	return copy

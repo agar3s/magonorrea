@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/Avestruz_Jump.tpsheet-bd71525ceb85e4ba0b91972f3e2ed9d2.res"
+
+[deps]
+
+files=[ "res://Wizard/Sprites/Avestruz_Jump.sprites/final-160.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-176.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-161.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-162.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-163.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-164.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-165.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-166.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-167.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-168.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-169.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-170.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-171.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-172.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-173.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-174.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-175.tres" ]
+
+source_file="res://Wizard/Sprites/Avestruz_Jump.tpsheet"
+dest_files=[ "res://.import/Avestruz_Jump.tpsheet-bd71525ceb85e4ba0b91972f3e2ed9d2.res", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-160.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-176.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-161.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-162.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-163.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-164.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-165.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-166.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-167.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-168.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-169.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-170.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-171.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-172.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-173.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-174.tres", "res://Wizard/Sprites/Avestruz_Jump.sprites/final-175.tres" ]
+
+[params]
+

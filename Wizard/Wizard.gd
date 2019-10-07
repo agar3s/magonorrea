@@ -75,6 +75,11 @@ func die():
 func win():
 	self.dead = true
 
-
 func jump():
 	mov.y = jump_speed_y
+
+func run():
+	pass
+
+func idle(on_ground = true):
+	pass

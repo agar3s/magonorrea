@@ -129,15 +129,12 @@ rotation = 2.35619
 position = Vector2( 60, 820 )
 
 [node name="Floor" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 510, 370 )
 script = ExtResource( 24 )
 type = "floor"
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Floor"]
-__meta__ = {
-"_edit_group_": true
-}
+editor/display_folded = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor/StaticBody2D2"]
 shape = SubResource( 4 )

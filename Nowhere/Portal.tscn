@@ -88,16 +88,16 @@ texture = ExtResource( 3 )
 editor/display_folded = true
 
 [node name="A" type="Position2D" parent="TargetPoints"]
-position = Vector2( -110, -140 )
+position = Vector2( -70, -170 )
 
 [node name="B" type="Position2D" parent="TargetPoints"]
-position = Vector2( -10, -200 )
+position = Vector2( -7.35, -230 )
 
 [node name="C" type="Position2D" parent="TargetPoints"]
-position = Vector2( 30, -100 )
+position = Vector2( 10, -110 )
 
 [node name="D" type="Position2D" parent="TargetPoints"]
-position = Vector2( 120, -160 )
+position = Vector2( 60, -180 )
 
 [node name="OriginPoints" type="Node2D" parent="."]
 editor/display_folded = true

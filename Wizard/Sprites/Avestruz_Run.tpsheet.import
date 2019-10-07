@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/Avestruz_Run.tpsheet-639a68623d0d4d47301c88049fdcd51d.res"
+
+[deps]
+
+files=[ "res://Wizard/Sprites/Avestruz_Run.sprites/final-020.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-021.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-022.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-023.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-024.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-025.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-026.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-027.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-028.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-029.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-030.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-031.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-032.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-033.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-034.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-035.tres" ]
+
+source_file="res://Wizard/Sprites/Avestruz_Run.tpsheet"
+dest_files=[ "res://.import/Avestruz_Run.tpsheet-639a68623d0d4d47301c88049fdcd51d.res", "res://Wizard/Sprites/Avestruz_Run.sprites/final-020.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-021.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-022.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-023.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-024.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-025.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-026.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-027.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-028.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-029.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-030.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-031.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-032.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-033.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-034.tres", "res://Wizard/Sprites/Avestruz_Run.sprites/final-035.tres" ]
+
+[params]
+

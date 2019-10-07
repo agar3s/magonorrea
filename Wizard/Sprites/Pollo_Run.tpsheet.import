@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/Pollo_Run.tpsheet-a10251a2e86d4a5c67d3c9177bf3b5e1.res"
+
+[deps]
+
+files=[ "res://Wizard/Sprites/Pollo_Run.sprites/final-110.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-111.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-112.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-113.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-114.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-115.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-116.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-117.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-118.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-119.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-120.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-121.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-122.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-123.tres" ]
+
+source_file="res://Wizard/Sprites/Pollo_Run.tpsheet"
+dest_files=[ "res://.import/Pollo_Run.tpsheet-a10251a2e86d4a5c67d3c9177bf3b5e1.res", "res://Wizard/Sprites/Pollo_Run.sprites/final-110.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-111.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-112.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-113.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-114.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-115.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-116.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-117.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-118.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-119.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-120.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-121.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-122.tres", "res://Wizard/Sprites/Pollo_Run.sprites/final-123.tres" ]
+
+[params]
+

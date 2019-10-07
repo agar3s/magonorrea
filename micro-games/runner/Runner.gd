@@ -1,6 +1,7 @@
 extends "res://micro-games/dimension.gd"
 
 var wizard_on_ground = false
+var first_time_on_ground = true
 onready var _obstacles = $Planet/Obstacles
 
 func _ready():
@@ -39,12 +40,19 @@ func _on_wizard_collide(element_type):
 		self.die()
 	elif element_type=='floor':
 		wizard_on_ground = true
+		if first_time_on_ground:
+			first_time_on_ground = false
+			wizard.idle()
+		else:
+			wizard.run()
 		self.level_velocity_x = wizard.ground_speed_x
 
 func set_wizard_form(form):
 	.set_wizard_form(form)
+	wizard.idle()
 	level_velocity_x = wizard.ground_speed_x
 	total_distance = _obstacles.get_node("Talisman").position.x - _obstacles.position.x - wizard.collision_width
 
 func start():
+	wizard.run()
 	$AnimationPlayer.play("Rotate", -1, 3.0)

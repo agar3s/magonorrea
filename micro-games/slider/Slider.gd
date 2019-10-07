@@ -31,11 +31,14 @@ func wizard_action(action):
 		wizard.mov.y = -480
 	if action == 'down':
 		wizard.mov.y = 480
+	wizard.run()
+
 	sliding = true
 
 func fix_position():
 	wizard.global_position.x = int(1+(wizard.global_position.x-padding_x)/cell_size)*cell_size+padding_x-cell_size/2
 	wizard.global_position.y = int(1+(wizard.global_position.y-padding_y)/cell_size)*cell_size+padding_y-cell_size/2 - colliding_offset_y
+	wizard.idle()
 
 
 func _on_wizard_collide(element_type):
@@ -51,4 +54,5 @@ func set_wizard_form(form):
 	.set_wizard_form(form)
 	wizard.set_scale(Vector2(0.6, 0.6))
 	wizard.get_node('CollisionShape2D').position.y += colliding_offset_y
+	wizard.idle()
 	fix_position()

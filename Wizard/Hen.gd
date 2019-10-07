@@ -10,6 +10,9 @@ func fly():
 	$SFX_Jump.playsound()
 	$VO_Jump.playsound()
 
+func run():
+	$Sprite.play("Run")
+
 func die():
 	$Sprite.play("Die")
 	if dead == false:
