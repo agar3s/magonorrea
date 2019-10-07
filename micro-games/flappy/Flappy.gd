@@ -25,6 +25,7 @@ func _ready():
 	
 	# play musica
 	$MX_Kitchen.play()
+	$BG_Kitchen.play()
 	
 	# verificar si hay que cargar algo pa' debug
 	check_debug()

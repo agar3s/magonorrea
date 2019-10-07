@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Ost_Die.ogg-4d50c39eab92eb0a8556bd449c6430cf.oggstr"
+
+[deps]
+
+source_file="res://Audio/Assets/SFX_Ost_Die.ogg"
+dest_files=[ "res://.import/SFX_Ost_Die.ogg-4d50c39eab92eb0a8556bd449c6430cf.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

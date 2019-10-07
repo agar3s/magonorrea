@@ -16,6 +16,8 @@ func _ready():
 		starting_positions.append(potion.rect_global_position)
 	$Portal.connect("potions_spited", self, "start_countdown")
 	$Portal.initialize($Potions.get_children())
+	
+	$BG_Nowhere.play()
 
 func start():
 	# poner valores por defecto
@@ -44,11 +46,13 @@ func start():
 
 func choose_potion(name = "normal"):
 	if form_choosed: return
+	$Potion_Pick.play()
 
 	form_choosed = true
 	yield($Portal.close_portal(), "completed")
 	naked_wizard.queue_free()
 	emit_signal('ENTER_DIMENSION', name.to_lower())
+	$BG_Nowhere.stop()
 
 func start_countdown():
 	yield(get_tree().create_timer(3), "timeout")

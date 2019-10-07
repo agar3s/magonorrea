@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=2]
+[gd_scene load_steps=73 format=2]
 
 [ext_resource path="res://micro-games/flappy/Flappy.gd" type="Script" id=1]
 [ext_resource path="res://micro-games/flappy/Sprites/Fire.sprites/final-001.tres" type="Texture" id=2]
@@ -67,6 +67,7 @@
 [ext_resource path="res://micro-games/flappy/Fork.tscn" type="PackedScene" id=65]
 [ext_resource path="res://Common/Talisman.tscn" type="PackedScene" id=66]
 [ext_resource path="res://Audio/Assets/MX_Kitchen.ogg" type="AudioStream" id=67]
+[ext_resource path="res://Audio/Assets/BG_Kitchen.ogg" type="AudioStream" id=68]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -96,7 +97,6 @@ animations = [ {
 } ]
 
 [node name="Flappy" type="Node2D"]
-editor/display_folded = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 300.0, 600.0 ],
@@ -327,6 +327,7 @@ animation = "Burn"
 frame = 5
 
 [node name="Forks" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Fork" parent="Forks" instance=ExtResource( 65 )]
 position = Vector2( 1000, 540 )
@@ -433,3 +434,8 @@ position = Vector2( 6860, 300 )
 
 [node name="MX_Kitchen" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 67 )
+
+[node name="BG_Kitchen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 68 )
+volume_db = -2.0
+bus = "SFX"

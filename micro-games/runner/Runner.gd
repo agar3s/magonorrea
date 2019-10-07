@@ -12,6 +12,9 @@ func _ready():
 	
 	$Space.play("travel")
 	
+	
+	$BG_Planeta.play()
+	
 	for obstacle in $Level.get_children():
 		pass # should order in X?
 	
@@ -86,4 +89,3 @@ func set_wizard_form(form):
 
 func start():
 	wizard.run()
-	$AnimationPlayer.play("Rotate", -1, 3.0)
