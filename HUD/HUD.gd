@@ -14,9 +14,17 @@ func show_die(reason):
 	$Container/Message.text = reason.capitalize()
 
 func show_end():
-	$Container/Message.text = 'Your talisman is back'
-
+	$MX_Credits.play()
+	yield(get_tree().create_timer(0.6), "timeout")
+	$Container/wizard_again.show()
+	yield(get_tree().create_timer(1.8), "timeout")
+	$Container/thanks.show()
+	
 func start_countdown(message):
+	if message == 'slide':
+		$Container/tutorial_arrows.show()
+	else:
+		$Container/tutorial_click.show()
 	$SFX_Countdown.play()
 	$Container/Message.text = '3'
 	yield(get_tree().create_timer(0.6), "timeout")
@@ -24,15 +32,17 @@ func start_countdown(message):
 	yield(get_tree().create_timer(0.6), "timeout")
 	$Container/Message.text = '1'
 	yield(get_tree().create_timer(0.6), "timeout")
+	$Container/tutorial_arrows.hide()
+	$Container/tutorial_click.hide()
 	$Container/Message.text = message
-	yield(get_tree().create_timer(0.3), "timeout")
-	$Container/Message.text = ''
 	if message == 'fly':
 		$SFX_Fly.play()
 	if message == 'run':
 		$SFX_Run.play()
 	if message == 'slide':
 		$SFX_Slide.play()
+	yield(get_tree().create_timer(0.3), "timeout")
+	$Container/Message.text = ''
 	emit_signal('COUNTDOWN_OVER')
 
 func update_progress(progress):

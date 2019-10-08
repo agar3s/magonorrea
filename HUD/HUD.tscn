@@ -1,14 +1,19 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://HUD/HUD.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Resources/DynamicFonts/Schoolbell-128.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Assets/Resources/DynamicFonts/Gaegu-128.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Assets/Fonts/Schoolbell-Regular.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Audio/Assets/UI_Countdown.ogg" type="AudioStream" id=4]
-[ext_resource path="res://Audio/Assets/UI_Die.ogg" type="AudioStream" id=5]
-[ext_resource path="res://Audio/Assets/UI_Win.ogg" type="AudioStream" id=6]
-[ext_resource path="res://Audio/Assets/UI_Fly.ogg" type="AudioStream" id=7]
-[ext_resource path="res://Audio/Assets/UI_Run.ogg" type="AudioStream" id=8]
-[ext_resource path="res://Audio/Assets/UI_Slide.ogg" type="AudioStream" id=9]
+[ext_resource path="res://HUD/Assets/tutorial_arrows.png" type="Texture" id=4]
+[ext_resource path="res://HUD/Assets/tutorial_click.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Fonts/Gaegu-Bold.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://HUD/Assets/wizard_again.png" type="Texture" id=7]
+[ext_resource path="res://Audio/Assets/UI_Countdown.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Audio/Assets/UI_Die.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Audio/Assets/UI_Win.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Audio/Assets/UI_Fly.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Audio/Assets/UI_Run.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Audio/Assets/UI_Slide.ogg" type="AudioStream" id=13]
+[ext_resource path="res://Audio/Assets/MX_Credits.ogg" type="AudioStream" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -16,6 +21,12 @@ outline_size = 4
 outline_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 use_filter = true
 font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+outline_size = 4
+outline_color = Color( 0.137255, 0.137255, 0.137255, 1 )
+font_data = ExtResource( 6 )
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -33,6 +44,8 @@ anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 2 )
 align = 1
 valign = 1
+autowrap = true
+clip_text = true
 
 [node name="Progress" type="Label" parent="Container"]
 anchor_right = 1.0
@@ -50,38 +63,70 @@ valign = 1
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -120.0
+margin_top = -55.0
+margin_bottom = 11.0
 custom_fonts/font = SubResource( 1 )
 text = "0s"
 align = 1
 valign = 1
 
+[node name="tutorial_arrows" type="Sprite" parent="Container"]
+visible = false
+position = Vector2( 536.41, 471.446 )
+texture = ExtResource( 4 )
+
+[node name="tutorial_click" type="Sprite" parent="Container"]
+visible = false
+position = Vector2( 572.975, 464.798 )
+texture = ExtResource( 5 )
+
+[node name="thanks" type="Label" parent="Container"]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -260.5
+margin_top = -91.0
+margin_right = 260.5
+margin_bottom = -26.0
+custom_fonts/font = SubResource( 2 )
+text = "Thanks for playing!"
+
+[node name="wizard_again" type="Sprite" parent="Container"]
+visible = false
+position = Vector2( 512, 90 )
+texture = ExtResource( 7 )
+
 [node name="SFX_Countdown" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource( 8 )
 bus = "SFX"
 
 [node name="SFX_Die" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 9 )
 volume_db = -7.0
 bus = "SFX"
 
 [node name="SFX_Win" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
+stream = ExtResource( 10 )
 volume_db = -6.0
 bus = "SFX"
 
 [node name="SFX_Fly" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
+stream = ExtResource( 11 )
 volume_db = 2.0
 bus = "SFX"
 
 [node name="SFX_Run" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 12 )
 volume_db = 2.0
 bus = "SFX"
 
 [node name="SFX_Slide" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource( 13 )
 volume_db = 2.0
 bus = "SFX"
+
+[node name="MX_Credits" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
 

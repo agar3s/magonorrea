@@ -6,6 +6,7 @@ onready var _obstacles = $Planet/Obstacles
 var traveled_distance = 0
 var rotation_speed = 10
 var planet_perimeter = 2600
+var outspace = false
 
 func _ready():
 	$Floor.connect("collision_detected", self, '_on_wizard_collide')
@@ -24,6 +25,7 @@ func _ready():
 	check_debug()
 
 func wizard_action(action):
+	if outspace: return
 	.wizard_action(action)
 	
 	if !action.empty():
@@ -44,13 +46,16 @@ func _process(delta):
 	if paused: return
 	update_planet_rotation(delta)
 	# _obstacles.global_position.x -= delta * self.level_velocity_x
-	wizard.fall(GRAVITY)
+	if !outspace:
+		wizard.fall(GRAVITY)
 	
 	if int(traveled_distance) % 10 == 0:
 		emit_signal('PROGRESS', int(-100*(traveled_distance)/total_distance))
 
 func update_planet_rotation(delta):
 	$Planet.rotation -= delta*PI*2/rotation_speed
+	if outspace:
+		wizard.rotation -= delta*PI*2/rotation_speed
 	traveled_distance = -$Planet.rotation*planet_perimeter/(2*PI)
 	$Level.position.x = -traveled_distance
 	if $Level.get_child_count() > 0:
@@ -86,6 +91,9 @@ func _on_wizard_collide(element_type):
 	if element_type=='pine':
 		self.die('Scratched!')
 	elif element_type == 'space':
+		outspace = true
+		wizard.mov.y = -60
+		yield(get_tree().create_timer(3), "timeout")
 		self.die('Out of space!')
 	elif element_type=='floor':
 		wizard_on_ground = true

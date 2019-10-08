@@ -8,7 +8,6 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-debug_dimension = 0
 
 [node name="Tween" type="Tween" parent="."]
 

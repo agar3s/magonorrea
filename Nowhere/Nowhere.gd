@@ -13,6 +13,8 @@ var first_time_here = true
 var wizard_rotation = 0
 var wizard_floating = null
 var found_pieces = 0
+var win_piece = false
+var trigger_words = false
 
 func _ready():
 	$Asterisk.hide()
@@ -31,6 +33,7 @@ func start():
 	
 	if first_time_here:
 		first_time_here = false
+		trigger_words = true
 		$Asterisk.show()
 		$Asterisk.connect("wizard_pooped", self, "_on_wizard_pooped")
 		return
@@ -39,6 +42,8 @@ func start():
 	set_defaults()
 
 	self.put_wizard()
+	if trigger_words:
+		yield(get_tree().create_timer(7.0), "timeout")
 
 	yield(get_tree().create_timer(3.0), "timeout")
 	
@@ -86,11 +91,35 @@ func put_wizard():
 	naked_wizard.in_nowhere = true
 	add_child(naked_wizard)
 	naked_wizard.z_index = 0
-	naked_wizard.get_node("Float").start_floating(wizard_floating)
+	
 
 	$TalismanContainer.show()
-	$TalismanContainer/Float.start_floating()
-	$TalismanContainer/Talisman/Float.start_floating()
+	if trigger_words:
+		$TalismanContainer/Float.start_floating()
+		$TalismanContainer/Talisman/Float.start_floating()
+	
+	if win_piece:
+		naked_wizard.rotation_degrees = 0
+		if found_pieces<3:
+			naked_wizard.get_node('Sprite').play('Happy')
+		else:
+			naked_wizard.get_node('Sprite').play('Dance_1')
+			yield(naked_wizard.get_node('Sprite'), 'animation_finished')
+			naked_wizard.get_node('Sprite').play('Dance_2')
+		win_piece = false
+	else:
+		naked_wizard.get_node("Float").start_floating(wizard_floating)
+		
+	if trigger_words:
+		for words in $Words.get_children():
+			$Tween.interpolate_property(words, "self_modulate:a", 0.0, 1.0, 0.4, Tween.TRANS_SINE,Tween.EASE_IN)
+			$Tween.interpolate_property(words, "position", words.position, Vector2(randi()%512+256,randi()%400+100), 4, Tween.TRANS_LINEAR,Tween.EASE_IN)
+			$Tween.interpolate_property(words, "self_modulate:a", 1.0, 0.0, 0.4, Tween.TRANS_SINE,Tween.EASE_IN, 3.5)
+			$Tween.start()
+			yield(get_tree().create_timer(3.5), "timeout")
+		
+		trigger_words = false
+		
 
 func set_defaults():
 	form_choosed = false
@@ -98,6 +127,8 @@ func set_defaults():
 		$Potions.get_child(idx).rect_global_position = starting_positions[idx]
 
 func heal_talisman():
+	win_piece = true
 	found_pieces += 1
-	if found_pieces < 3:
+	if found_pieces <= 3:
 		$TalismanContainer/Talisman.set_frame(found_pieces)
+

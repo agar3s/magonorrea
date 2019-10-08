@@ -67,7 +67,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 510.0 ]
 }
 wizard_starting_pos = Vector2( 512, 359 )
-debug_wizard_form = "Hen"
+debug_wizard_form = "Ostrich"
 verb = "run"
 
 [node name="Background" type="Sprite" parent="."]
@@ -117,7 +117,7 @@ position = Vector2( 0, -11 )
 shape = SubResource( 4 )
 
 [node name="OuterSpace" type="Node2D" parent="."]
-position = Vector2( 510, 50 )
+position = Vector2( 510, 55 )
 script = ExtResource( 22 )
 __meta__ = {
 "_edit_group_": true

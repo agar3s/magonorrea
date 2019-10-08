@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Nowhere/Nowhere.gd" type="Script" id=1]
 [ext_resource path="res://Nowhere/Portal.tscn" type="PackedScene" id=2]
@@ -11,6 +11,11 @@
 [ext_resource path="res://Audio/Assets/SFX_Potion_Pick.ogg" type="AudioStream" id=9]
 [ext_resource path="res://Nowhere/Asterisk.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Nowhere/Sprites/amuleto.png" type="Texture" id=11]
+[ext_resource path="res://Nowhere/Sprites/AHHH.png" type="Texture" id=12]
+[ext_resource path="res://Nowhere/Sprites/spell_wrong.png" type="Texture" id=13]
+[ext_resource path="res://Nowhere/Sprites/I_lost_everything.png" type="Texture" id=14]
+[ext_resource path="res://Nowhere/Sprites/recover_amulet.png" type="Texture" id=15]
+[ext_resource path="res://Nowhere/Sprites/im_nothing.png" type="Texture" id=16]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 2
@@ -28,6 +33,9 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 1, 0.976471, 0.976471, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Portal" parent="." instance=ExtResource( 2 )]
 
@@ -142,4 +150,34 @@ hframes = 4
 [node name="Float" parent="TalismanContainer/Talisman" instance=ExtResource( 4 )]
 
 [node name="Float" parent="TalismanContainer" instance=ExtResource( 4 )]
+
+[node name="Words" type="Node2D" parent="."]
+z_index = 2
+
+[node name="AHHH" type="Sprite" parent="Words"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 300 )
+texture = ExtResource( 12 )
+
+[node name="spell_wrong" type="Sprite" parent="Words"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 300 )
+texture = ExtResource( 13 )
+
+[node name="I_lost_everything" type="Sprite" parent="Words"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 300 )
+texture = ExtResource( 14 )
+
+[node name="recover_amulet" type="Sprite" parent="Words"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 300 )
+texture = ExtResource( 15 )
+
+[node name="im_nothing" type="Sprite" parent="Words"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 512, 300 )
+texture = ExtResource( 16 )
+
+[node name="Tween" type="Tween" parent="."]
 

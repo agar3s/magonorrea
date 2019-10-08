@@ -22,3 +22,6 @@ func start_floating(side = ""):
 		Tween.EASE_OUT
 	)
 	$Tween.start()
+
+func stop_floating():
+	$Tween.stop(get_parent())
